@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/findadoctor.css" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Find your specialist</title>
+  </head>
+  <body>
+    <header class="w-100 border-bottom fixed-top">
+      <nav
+        class="d-flex justify-content-between align-items-center container-xxl"
+      >
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="./index.html" class="fw-bold">
+            <img src="./img/icons/logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <ul
+            class="d-flex gap-5 m-0 align-items-center p-0"
+            id="navigation_list"
+          >
+            <li>
+              <a href="#">Find a doctor</a>
+            </li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li>
+              <a href="#" class="d-flex"
+                ><button class="btn btn-outline-primary rounded-5">
+                  Sign in
+                </button></a
+              >
+            </li>
+          </ul>
+
+          <!-- MENU -->
+          <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero position-relative">
+      <div class="container-xxl">
+        <div class="position-absolute top-50 translate-middle-y mt-4">
+          <h1 class="fw-bold hero_title text-light display-4">
+            Your health is our, <br />
+            responsibility
+          </h1>
+
+          <ul class="mt-4 m-0 p-0 d-grid gap-2">
+            <li class="text-light d-flex align-items-center gap-3">
+              <img
+                class="img-sm-icons"
+                src="./img/icons/doctor/transparency.png"
+                alt="search_icon"
+              />
+              Search for doctor
+            </li>
+            <li class="text-light d-flex align-items-center gap-3">
+              <img
+                class="img-sm-icons"
+                src="./img/icons/doctor/transparency.png"
+                alt="search_icon"
+              />
+              Select the doctor
+            </li>
+            <li class="text-light d-flex align-items-center gap-3">
+              <img
+                class="img-sm-icons"
+                src="./img/icons/doctor/transparency.png"
+                alt="search_icon"
+              />
+              Make an appointment
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="border-top w-100 py-5"
+      style="margin-top: 12rem; height: auto"
+    >
+      <div class="container-xxl">
+        <div class="row py-3 g-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <h5 class="text-light fw-semibold">BAYANIHAN HEALTHCARE</h5>
+            <p class="text-light mt-3">
+              Bayanihan Healthcare is a healthcare provider that offers onsite
+              and online appointments and reliable health information.
+            </p>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
+          >
+            <ul class="d-grid">
+              <li>
+                <a href="" class="text-light">About Us</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Our Services</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Health Resources</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
+          >
+            <ul class="d-grid">
+              <li>
+                <a href="" class="text-light">Health Resources</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Health Blog</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
+          >
+            <ul class="d-grid">
+              <li>
+                <a href="" class="text-light">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="" class="text-light">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

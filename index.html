@@ -47,7 +47,7 @@
             id="navigation_list"
           >
             <li>
-              <a href="#">Find a doctor</a>
+              <a href="./findadoctor.html">Find a doctor</a>
             </li>
             <li><a href="#">Articles</a></li>
             <li><a href="#">Sign up</a></li>
@@ -85,11 +85,49 @@
             providers online.
           </p>
 
-          <div class="hero_btn">
-            <button class="btn btn-main text-light mt-4">
-              Make an appointment
-            </button>
-          </div>
+          <form
+            class="row g-3 bg-light mt-5 px-2 rounded-2 gx-5 hero_form py-4"
+          >
+            <div
+              class="col-12 col-md-5 col-lg-5 m-0 align-items-center d-flex gap-3"
+            >
+              <img
+                class="img-sm-icons"
+                src="./img/icons/doctor/doctor.png"
+                alt="search_icon"
+              />
+              <input
+                type="text"
+                class="form-control border-0 hero_input border-bottom rounded-0"
+                placeholder="Specialty or name"
+              />
+            </div>
+            <div
+              class="col-12 col-md-5 col-lg-5 m-0 d-flex align-items-center gap-3"
+            >
+              <img
+                class="img-sm-icons"
+                src="./img/icons/doctor/location.png"
+                alt="search_icon"
+              />
+              <input
+                type="password"
+                class="form-control border-0 hero_input border-bottom rounded-0"
+                id="inputPassword2"
+                placeholder="Location"
+              />
+
+              <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="col-12 col-md-2 m-0">
+              <button
+                type="submit"
+                class="btn btn-main text-light px-4 hero_btn"
+              >
+                Search
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -197,9 +235,7 @@
               and online appointments and reliable health information.
             </p>
           </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
-          >
+          <div class="col-12 col-md-6 col-lg-3 p-0 footer_links">
             <ul class="d-grid">
               <li>
                 <a href="" class="text-light">About Us</a>
@@ -212,9 +248,7 @@
               </li>
             </ul>
           </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
-          >
+          <div class="col-12 col-md-6 col-lg-3 p-0 footer_links">
             <ul class="d-grid">
               <li>
                 <a href="" class="text-light">Health Resources</a>
@@ -227,9 +261,7 @@
               </li>
             </ul>
           </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-start p-0"
-          >
+          <div class="col-12 col-md-6 col-lg-3 p-0 footer_links">
             <ul class="d-grid">
               <li>
                 <a href="" class="text-light">Privacy Policy</a>

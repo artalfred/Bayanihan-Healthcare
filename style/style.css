@@ -116,6 +116,33 @@ main {
   padding: 0.7rem 2rem !important;
 }
 
+.search {
+  background-color: #fff;
+}
+
+.hero_form {
+  margin-right: 1rem !important;
+  margin-left: 0rem !important;
+  row-gap: 1.4rem;
+}
+
+.hero_input {
+  background-color: transparent !important;
+}
+
+.img-sm-icons {
+  height: 1.6rem;
+}
+
+ion-icon {
+  color: #999;
+  font-size: 1.6rem;
+}
+
+input {
+  box-shadow: none !important;
+}
+
 /* SECTION 2 */
 .section-2 {
   height: auto;
@@ -158,6 +185,22 @@ footer {
   background: #161853;
 }
 
+.footer_links {
+  display: flex;
+  justify-content: end;
+}
+
+/* .footer_links {
+    justify-content: start !important;
+  } */
+
+@media (max-width: 991.98px) {
+  .footer_links {
+    display: flex;
+    justify-content: start;
+  }
+}
+
 @media (max-width: 768.98px) {
   #navigation_list {
     display: none !important;
@@ -166,6 +209,10 @@ footer {
   .menu {
     display: grid;
     align-items: center;
+  }
+
+  .hero_btn {
+    width: 100%;
   }
 }
 
