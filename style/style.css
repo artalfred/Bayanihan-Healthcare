@@ -103,7 +103,7 @@ main {
 /* HERO  */
 
 .hero {
-  height: 50rem;
+  height: 45rem;
   background-image: url(../img/hero.png);
   background-size: cover;
   background-position: center;
