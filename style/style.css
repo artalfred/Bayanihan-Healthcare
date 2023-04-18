@@ -2,6 +2,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -26,8 +27,12 @@ p {
   font-size: 14px;
 }
 
+header {
+  background: #fff;
+}
+
 nav {
-  height: 5rem;
+  height: 4.6rem;
   background: #fff !important;
   z-index: 10;
 }
@@ -38,6 +43,10 @@ nav div {
 
 main {
   padding: 0rem 3rem;
+}
+
+.logo {
+  height: 3.4rem;
 }
 
 /* MENU */
@@ -94,7 +103,11 @@ main {
 /* HERO  */
 
 .hero {
-  height: 60rem;
+  height: 50rem;
+  background-image: url(../img/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .btn-main {
