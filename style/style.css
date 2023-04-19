@@ -84,7 +84,7 @@ main {
 }
 
 .violet_color {
-  color: #161853 !important;
+  color: #113e51 !important;
 }
 
 .green_gray_color {
@@ -92,12 +92,12 @@ main {
 }
 
 .btn-outline-primary {
-  border: 1.8px solid #542781 !important;
-  color: #542781 !important;
+  border: 1.8px solid #00c189 !important;
+  color: #000 !important;
 }
 
 .btn-outline-primary:hover {
-  background: #542781 !important;
+  background: #00c189 !important;
   color: #fff !important;
 }
 
@@ -112,7 +112,7 @@ main {
 }
 
 .btn-main {
-  background-color: #542781 !important;
+  background-color: #00c189 !important;
   padding: 0.7rem 2rem !important;
 }
 
@@ -166,7 +166,7 @@ input {
 }
 
 .border_top_guide {
-  border-top: 4px solid #f9b31d !important;
+  border-top: 4px solid #216d57 !important;
   border-bottom: 0px !important;
   border-left: 0px !important;
   border-right: 0px !important;
