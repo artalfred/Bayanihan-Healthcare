@@ -23,7 +23,7 @@ a {
 
 ul {
   margin: 0 !important;
-  padding-left: 1.4rem !important;
+  padding-left: 0 !important;
 }
 
 li {
@@ -188,7 +188,8 @@ input {
 
 /* FOOTER */
 footer {
-  background: #161853;
+  background: transparent;
+  margin-top: 10rem;
 }
 
 .footer_links {
@@ -215,6 +216,16 @@ footer {
   .menu {
     display: grid;
     align-items: center;
+  }
+
+  #footer_logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer_links {
+    display: flex;
+    justify-content: center !important;
   }
 }
 
