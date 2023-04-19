@@ -112,7 +112,7 @@ main {
 /* ///////////////////////////////////////////////////////////////// */
 /* HERO  */
 .hero {
-  height: 45rem;
+  height: 100vh;
   background-image: url(../img/hero.png);
   background-size: cover;
   background-position: center;
@@ -216,10 +216,6 @@ footer {
     display: grid;
     align-items: center;
   }
-
-  .hero_btn {
-    width: 100%;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -254,6 +250,11 @@ footer {
 
   .sub-title br {
     display: none;
+  }
+
+  .hero_btn {
+    display: flex;
+    justify-content: center;
   }
 }
 

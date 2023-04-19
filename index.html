@@ -80,14 +80,9 @@
 
     <!-- NAVBAR -->
     <div
-      class="collapse navbar-collapse fixed-top w-100"
+      class="collapse navbar-collapse position-absolute bg-light w-100"
       id="navbarNav"
-      style="
-        z-index: 300;
-        margin-top: 4.5rem;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-        background-color: #fff;
-      "
+      style="z-index: 300; top: 4.5rem"
     >
       <ul class="navbar-nav py-4">
         <li class="nav-item">
@@ -96,15 +91,16 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Articles</a>
+          <a class="nav-link" href="#">Blog</a>
         </li>
-        <div class="d-flex gap-3 align-items-center mt-3">
+
+        <div class="d-flex gap-3 mt-2">
           <li class="nav-item">
             <a class="nav-link" href="#">Sign up</a>
           </li>
           <li>
             <a href="#" class="d-flex"
-              ><button class="btn btn-outline-primary rounded-2">
+              ><button class="btn btn-outline-primary rounded-5">
                 Sign in
               </button></a
             >
@@ -115,10 +111,13 @@
 
     <section class="hero position-relative">
       <div class="container-xxl">
-        <div class="position-absolute top-50 translate-middle-y mt-4">
+        <div
+          class="position-absolute top-50 translate-middle-y mt-4"
+          style="margin-right: 1rem"
+        >
           <h1 class="fw-bold hero_title text-light display-4">
-            Empowering your health, <br />
-            the Bayanihan way
+            Stay healthy, book your <br />
+            appointment today
           </h1>
 
           <p class="text-light mt-4 hero_paragraph">
@@ -128,57 +127,19 @@
             providers online.
           </p>
 
-          <form class="bg-light mt-5 rounded-2 hero_form">
-            <div class="row py-3 px-4" style="row-gap: 1.4rem">
-              <div
-                class="col-12 col-md-5 col-lg-5 m-0 align-items-center d-flex gap-3"
-              >
-                <img
-                  class="img-sm-icons"
-                  src="./img/icons/doctor/doctor.png"
-                  alt="search_icon"
-                />
-                <input
-                  type="text"
-                  class="form-control border-0 hero_input border-bottom rounded-0"
-                  placeholder="Specialty or name"
-                />
-              </div>
-              <div
-                class="col-12 col-md-5 col-lg-5 m-0 d-flex align-items-center gap-3"
-              >
-                <img
-                  class="img-sm-icons"
-                  src="./img/icons/doctor/location.png"
-                  alt="search_icon"
-                />
-                <input
-                  type="text"
-                  class="form-control border-0 hero_input border-bottom rounded-0"
-                  id="inputPassword2"
-                  placeholder="Location"
-                />
-
-                <ion-icon name="chevron-down-outline"></ion-icon>
-              </div>
-              <div class="col-12 col-md-2 m-0">
-                <button
-                  type="submit"
-                  class="btn btn-main text-light px-4 hero_btn"
-                >
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
+          <div class="mt-5 hero_btn">
+            <button type="submit" class="btn btn-main text-light px-4">
+              Make an appointment
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
     <main class="container-xxl">
       <section class="section-2">
-        <h6 class="vio-green span_text">Fast Solutions</h6>
-        <h2 class="fw-semibold sub-title display-5">
+        <h6 class="violet_color span_text">Fast Solutions</h6>
+        <h2 class="fw-semibold sub-title violet_color display-5">
           Quick Solution For Scheduling <br />
           With Doctor
         </h2>
@@ -250,8 +211,8 @@
         </div>
 
         <div style="margin-top: 12rem">
-          <h6 class="vio-green text-center">Need a doctor for check up?</h6>
-          <h2 class="fw-semibold sub-title text-center display-5">
+          <h6 class="violet_color text-center">Need a doctor for check up?</h6>
+          <h2 class="fw-semibold sub-title violet_color text-center display-5">
             Just make an appointment and <br />
             you're done
           </h2>
