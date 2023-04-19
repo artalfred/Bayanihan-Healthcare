@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --sub-title: #113e51;
+  --green: #216d57;
+  --btn-green: #00c189;
+}
+
 a {
   text-decoration: none !important;
   color: #000 !important;
@@ -46,6 +52,11 @@ main {
   padding: 0rem 3rem;
 }
 
+/* COLORS */
+.vio-green {
+  color: var(--sub-title);
+}
+
 .logo {
   height: 3.4rem;
 }
@@ -62,7 +73,7 @@ main {
 .bar3 {
   width: 35px;
   height: 3.2px;
-  background-color: #542781;
+  background-color: var(--sub-title);
   transition: 0.4s;
   border-radius: 4px;
 }
@@ -83,14 +94,11 @@ main {
   font-family: "Playfair Display", serif !important;
 }
 
-.violet_color {
-  color: #113e51 !important;
+.sub-title {
+  color: var(--sub-title) !important;
 }
 
-.green_gray_color {
-  color: #00a7b5 !important;
-}
-
+/* NAV BUTTON */
 .btn-outline-primary {
   border: 1.8px solid #00c189 !important;
   color: #000 !important;
@@ -101,8 +109,8 @@ main {
   color: #fff !important;
 }
 
+/* ///////////////////////////////////////////////////////////////// */
 /* HERO  */
-
 .hero {
   height: 45rem;
   background-image: url(../img/hero.png);
@@ -112,7 +120,7 @@ main {
 }
 
 .btn-main {
-  background-color: #00c189 !important;
+  background-color: var(--btn-green) !important;
   padding: 0.7rem 2rem !important;
 }
 
@@ -121,9 +129,7 @@ main {
 }
 
 .hero_form {
-  margin-right: 1rem !important;
-  margin-left: 0rem !important;
-  row-gap: 1.4rem;
+  margin-right: 0.8rem;
 }
 
 .hero_input {
@@ -131,7 +137,7 @@ main {
 }
 
 .img-sm-icons {
-  height: 1.6rem;
+  height: 1.4rem;
 }
 
 ion-icon {
@@ -201,7 +207,7 @@ footer {
   }
 }
 
-@media (max-width: 768.98px) {
+@media (max-width: 767.98px) {
   #navigation_list {
     display: none !important;
   }
