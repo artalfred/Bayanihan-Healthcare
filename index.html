@@ -36,31 +36,31 @@
         class="d-flex justify-content-between align-items-center container-xxl"
       >
         <div class="d-flex justify-content-center align-items-center">
-          <a href="./index.html" class="fw-bold"> LOGO </a>
+          <a href="./index.html" class="fw-bold">
+            <img src="./img/icons/bayanihan.png" alt="logo" class="logo" />
+          </a>
         </div>
 
         <div class="d-flex align-items-center">
           <ul
-            class="d-flex gap-5 m-0 align-items-center p-0"
+            class="d-flex gap-4 m-0 align-items-center p-0"
             id="navigation_list"
           >
             <li>
-              <a href="#">Find a doctor</a>
-            </li>
-            <li><a href="#">Health Services</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li>
-              <a href="#" class="d-flex"
-                ><button class="btn btn-outline-primary rounded-5">
-                  Sign in
-                </button></a
-              >
+              <a href="login2.html" class="d-flex"> Login </a>
             </li>
           </ul>
 
           <!-- MENU -->
-          <div class="menu" onclick="myFunction(this)">
+          <div
+            class="menu"
+            onclick="myFunction(this)"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -69,55 +69,84 @@
       </nav>
     </header>
 
-    <main class="container-xxl">
-      <section class="hero position-relative">
-        <div class="position-absolute top-50 start-0 translate-middle-y">
-          <h1 class="fw-bold hero_title" style="font-size: 54px">
-            Empowering your health, <br />
-            the Bayanihan way
-          </h1>
-
-          <h1
-            class="fw-bold hero_title_mobile text-center"
-            style="font-size: 35px"
+    <!-- NAVBAR -->
+    <div
+      class="collapse navbar-collapse fixed-top bg-light w-100"
+      id="navbarNav"
+      style="z-index: 500; top: 4.5rem"
+    >
+      <ul class="navbar-nav py-4 px-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Find a doctor</a
           >
-            Empowering your <br />
-            health the Bayanihan <br />
-            way
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+
+        <div class="d-flex gap-3 mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+          <li>
+            <a href="login2.html" class="d-flex"
+              ><button class="btn btn-outline-primary rounded-5">
+                Sign in
+              </button></a
+            >
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <section class="hero position-relative">
+      <div class="container-xxl">
+        <div
+          class="position-absolute top-50 translate-middle-y mt-4"
+          style="margin-right: 1rem"
+        >
+          <h1 class="fw-bold hero_title text-light display-4">
+            Stay healthy, book your <br />
+            appointment today
           </h1>
 
-          <p class="text-secondary mt-4 hero_paragraph">
+          <p class="text-light mt-4 hero_paragraph">
             Bayanihan Healthcare provides free access to reliable health
             resources and <br />
             allows you to easily make appointments with healthcare <br />
             providers online.
           </p>
 
-          <div class="hero_btn">
-            <button class="btn btn-main text-light mt-4">
+          <div class="mt-5 hero_btn gap-3 d-flex">
+            <button type="submit" class="btn btn-main text-light px-4">
               Make an appointment
             </button>
+            <a href="#" class="d-flex"
+              ><button
+                class="btn btn-outline-primary text-light px-4 rounded-3"
+              >
+                Articles
+              </button></a
+            >
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <main class="container-xxl">
       <section class="section-2">
         <h6 class="violet_color span_text">Fast Solutions</h6>
-        <h2 class="fw-semibold sub-title violet_color">
+        <h2 class="fw-semibold sub-title violet_color display-5">
           Quick Solution For Scheduling <br />
           With Doctor
-        </h2>
-
-        <h2 class="fw-semibold sub-title_mobile violet_color text-center">
-          Quick Solution For <br />
-          Scheduling With Doctor
         </h2>
 
         <div class="row mt-5 gy-4">
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card border_top_guide rounded-0 py-4 px-3">
               <img
-                src="./img/account.png"
+                src="./img/icons/user.png"
                 class="card-img-top img-icons"
                 alt="..."
               />
@@ -133,7 +162,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card border_top_guide rounded-0 py-4 px-3">
               <img
-                src="./img/search.png"
+                src="./img/icons/search.png"
                 class="card-img-top img-icons"
                 alt="..."
               />
@@ -149,7 +178,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card border_top_guide rounded-0 py-4 px-3">
               <img
-                src="./img/calendar.png"
+                src="./img/icons/calendar.png"
                 class="card-img-top img-icons"
                 alt="..."
               />
@@ -165,7 +194,7 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card border_top_guide rounded-0 py-4 px-3">
               <img
-                src="./img/check-mark.png"
+                src="./img/icons/checkmark.png"
                 class="card-img-top img-icons"
                 alt="..."
               />
@@ -181,15 +210,11 @@
 
         <div style="margin-top: 12rem">
           <h6 class="violet_color text-center">Need a doctor for check up?</h6>
-          <h2 class="fw-semibold sub-title violet_color text-center">
+          <h2 class="fw-semibold sub-title violet_color text-center display-5">
             Just make an appointment and <br />
             you're done
           </h2>
 
-          <h2 class="fw-semibold sub-title_mobile violet_color text-center">
-            Just make an appointment <br />
-            and you're done
-          </h2>
           <div class="d-flex justify-content-center">
             <button class="btn btn-main text-light mt-4">
               Make an appointment
@@ -199,67 +224,144 @@
       </section>
     </main>
 
-    <footer
-      class="border-top w-100 py-5"
-      style="margin-top: 12rem; height: auto"
+    <!-- FOOTER -->
+    <div class="vio-green-bg">
+      <div class="container-xxl" style="margin-top: 12rem">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top gy-2"
+        >
+          <div class="col col-lg-2">
+            <a href="./index.html" class="fw-bold">
+              <img src="./img/icons/bayanihan2.png" alt="logo" class="logo" />
+            </a>
+
+            <div class="d-flex gap-3 mt-4">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                The bayanihan Healthcare <br />
+                Ortigas Avenue, Pasig City, <br />
+                Metro Manila, Philippines
+              </p>
+            </div>
+
+            <div class="d-flex gap-3">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                (632) 8988-1000 <br />
+                (632) 8988-1000
+              </p>
+            </div>
+
+            <div class="d-flex gap-3">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                mail@bayanihanhealthcare.com
+              </p>
+            </div>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">SERVICES</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50">About Us</a>
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Health Services</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Health Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">ABOUT US</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >The Bayanihan Healthcare</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Mission and Vision</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Quality and Safe</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">LATEST NEWS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Accessibility Statement</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      class="w-100 d-flex align-items-center footer_bottom_parent"
+      style="height: 3.6rem; background: #264653"
     >
-      <div class="container-xxl">
-        <div class="row py-3 g-5">
-          <div class="col-12 col-md-6 col-lg-3">
-            <h5 class="text-light fw-semibold">BAYANIHAN HEALTHCARE</h5>
-            <p class="text-light mt-3">
-              Bayanihan Healthcare is a healthcare provider that offers onsite
-              and online appointments and reliable health information.
-            </p>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-center p-0"
-          >
-            <ul class="d-grid">
-              <li>
-                <a href="" class="text-light">About Us</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Our Services</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Health Resources</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-center p-0"
-          >
-            <ul class="d-grid">
-              <li>
-                <a href="" class="text-light">Health Resources</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Health Blog</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="col-12 col-md-6 col-lg-3 d-flex justify-content-center p-0"
-          >
-            <ul class="d-grid">
-              <li>
-                <a href="" class="text-light">Privacy Policy</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Terms and Conditions</a>
-              </li>
-              <li>
-                <a href="" class="text-light">Accessibility Statement</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-xxl footer_bottom">
+        <div class="d-flex gap-3 align-items-center">
+          <h6 class="mb-0 footer_fs text-white-50">Privacy Policy</h6>
+          <h6 class="mb-0 footer_fs text-white-50">|</h6>
+          <h6 class="mb-0 footer_fs text-white-50">Terms and Conditions</h6>
+        </div>
+
+        <div>
+          <h6 class="mb-0 footer_fs text-white-50">
+            Copyright © 2023 Bayanihan HealthCare. All rights reserved.
+          </h6>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="./index.js"></script>
   </body>
