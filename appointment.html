@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make an appointment</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <!-- BOOTSTRAP -->
     <link
@@ -16,46 +26,18 @@
       crossorigin="anonymous"
     />
 
-    <!-- GOOGLE FONT -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- ICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-
-    <title>Bayanihan Healthcare</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/appointment.css" />
   </head>
   <body>
-    <header
-      class="w-100 border-bottom fixed-top"
-      style="
-        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-          rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-      "
-    >
+    <header class="w-100 border-bottom fixed-top">
       <nav
         class="d-flex justify-content-between align-items-center container-xxl"
       >
-        <div class="d-flex justify-content-center align-items-center gap-5">
+        <div class="d-flex justify-content-center align-items-center">
           <a href="./index.html" class="fw-bold">
             <img src="./img/icons/logo.png" alt="logo" class="logo" />
           </a>
-          <ul class="d-flex gap-5 mx-5" id="navigation_list">
-            <li>
-              <a href="#" class="d-flex">Services</a>
-            </li>
-            <li>
-              <a href="#" class="d-flex">Blog</a>
-            </li>
-            <li>
-              <a href="#" class="d-flex">Partners</a>
-            </li>
-          </ul>
         </div>
 
         <div class="d-flex align-items-center">
@@ -63,16 +45,8 @@
             class="d-flex gap-4 m-0 align-items-center p-0"
             id="navigation_list"
           >
-            <li></li>
             <li>
-              <a href="./appointment.html">
-                <button
-                  type="submit"
-                  class="btn btn-outline-primary vio-green px-4"
-                >
-                  Login
-                </button>
-              </a>
+              <a href="./login2.html" class="d-flex"> Login </a>
             </li>
           </ul>
 
@@ -102,7 +76,9 @@
     >
       <ul class="navbar-nav py-4 px-3">
         <li class="nav-item">
-          <a class="nav-link" href="#">Find a doctor</a>
+          <a class="nav-link active" aria-current="page" href="#"
+            >Find a doctor</a
+          >
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
@@ -123,126 +99,101 @@
       </ul>
     </div>
 
-    <section class="hero position-relative">
-      <div class="container-xxl">
+    <section class="appointment">
+      <div class="container">
+        <h1 class="fw-semibold text-center vio-green mt-5">
+          Appointment booking
+        </h1>
+
         <div
-          class="position-absolute top-50 translate-middle-y mt-4"
-          style="margin-right: 1rem"
+          class="d-flex gap-2 justify-content-center align-items-center mt-4"
         >
-          <h1 class="fw-bold hero_title text-light display-4">
-            Stay healthy, book your <br />
-            appointment today
-          </h1>
+          <nav aria-label="Page navigation">
+            <ul class="d-flex gap-2 pagination align-items-center">
+              <li class="page-item">
+                <a
+                  class="page-link active rounded-circle text-light position-relative"
+                  href="#"
+                  style="padding: 1.6rem"
+                  ><span
+                    class="position-absolute top-50 fw-normal start-50 translate-middle"
+                    >1</span
+                  ></a
+                >
+              </li>
+              <div
+                style="height: 2px; background-color: #888; width: 3rem"
+              ></div>
+              <li class="page-item">
+                <a
+                  class="page-link rounded-circle text-dark position-relative"
+                  href="#"
+                  style="padding: 1.6rem"
+                  ><span
+                    class="position-absolute top-50 fw-normal start-50 translate-middle"
+                    >2</span
+                  ></a
+                >
+              </li>
+              <div
+                style="height: 2px; background-color: #888; width: 3rem"
+              ></div>
+              <li class="page-item">
+                <a
+                  class="page-link rounded-circle text-dark position-relative"
+                  href="#"
+                  style="padding: 1.6rem"
+                  ><span
+                    class="position-absolute top-50 fw-normal start-50 translate-middle"
+                    >3</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
 
-          <p class="text-light mt-4 hero_paragraph">
-            Bayanihan Healthcare provides free access to reliable health
-            resources and <br />
-            allows you to easily make appointments with healthcare <br />
-            providers online.
-          </p>
+        <h4 class="fw-semibold text-center vio-green mt-5">
+          Choose your treatment date!
+        </h4>
 
-          <div class="mt-5 hero_btn gap-3 d-flex">
-            <a href="./appointment.html">
-              <button type="submit" class="btn btn-main text-light px-4">
-                Make an appointment
-              </button>
-            </a>
+        <div class="d-flex gap-3 justify-content-center mt-5">
+          <div class="d-grid date_input">
+            <label for="date">Date</label>
+            <div class="position-relative">
+              <input
+                type="date"
+                name="date"
+                class="date mt-2 rounded-2 border"
+                style="padding: 0.8rem 1.2rem"
+                placeholder="hello"
+                required
+              />
+              <img src="./img/icons/calendar.png" alt="calendar" />
+            </div>
           </div>
+
+          <div class="d-grid date_input">
+            <label for="date">Time</label>
+            <div class="position-relative">
+              <input
+                type="time"
+                name="date"
+                class="date mt-2 rounded-2 border"
+                style="padding: 0.8rem 1.2rem"
+                placeholder="hello"
+                required
+              />
+              <img src="./img/icons/clock.png" alt="clock" />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mt-5">
+          <button class="btn btn-appointment text-light">Continue</button>
         </div>
       </div>
     </section>
-
-    <main class="container-xxl">
-      <section class="section-2">
-        <h6 class="span_text vio-green">Fast Solutions</h6>
-        <h2 class="fw-semibold sub-title display-5">
-          Quick Solution For Scheduling <br />
-          With Doctor
-        </h2>
-
-        <div class="row mt-5 gy-4">
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card border_top_guide rounded-0 py-4 px-3">
-              <img
-                src="./img/icons/user.png"
-                class="card-img-top img-icons"
-                alt="..."
-              />
-              <div class="card-body p-1 mt-3">
-                <h6 class="card-title fw-semibold">Create an account</h6>
-                <p class="card-text">
-                  Sign up with personal details and create a login username and
-                  password.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card border_top_guide rounded-0 py-4 px-3">
-              <img
-                src="./img/icons/search.png"
-                class="card-img-top img-icons"
-                alt="..."
-              />
-              <div class="card-body p-1 mt-3">
-                <h6 class="card-title fw-semibold">Find a doctor</h6>
-                <p class="card-text">
-                  Browse and select a doctor by specialty, location, or
-                  availability.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card border_top_guide rounded-0 py-4 px-3">
-              <img
-                src="./img/icons/calendar.png"
-                class="card-img-top img-icons"
-                alt="..."
-              />
-              <div class="card-body p-1 mt-3">
-                <h6 class="card-title fw-semibold">Make an appointment</h6>
-                <p class="card-text">
-                  Choose a date and time, and schedule an appointment online or
-                  by phone.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="card border_top_guide rounded-0 py-4 px-3">
-              <img
-                src="./img/icons/checkmark.png"
-                class="card-img-top img-icons"
-                alt="..."
-              />
-              <div class="card-body p-1 mt-3">
-                <h6 class="card-title fw-semibold">Confirm the appointment</h6>
-                <p class="card-text">
-                  Check details and confirm to receive a confirmation message.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="margin-top: 12rem">
-          <h6 class="violet_color text-center">Need a doctor for check up?</h6>
-          <h2 class="fw-semibold sub-title violet_color text-center display-5">
-            Just make an appointment and <br />
-            you're done
-          </h2>
-
-          <div class="d-flex justify-content-center">
-            <a href="./appointment.html">
-              <button class="btn btn-main text-light mt-4">
-                Make an appointment
-              </button>
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
 
     <!-- FOOTER -->
     <div class="vio-green-bg">
@@ -377,12 +328,14 @@
       </div>
     </div>
 
+    <!-- MAIN JAVASCRIPT -->
+    <script src="./index.js"></script>
+
+    <!-- BOOTSTRAP JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
-
-    <script src="./index.js"></script>
   </body>
 </html>
