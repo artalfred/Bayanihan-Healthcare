@@ -8,102 +8,34 @@
 }
 
 .appointment {
-  margin-top: 10rem;
+  margin-top: 12rem;
+}
+
+.btn-sub {
+  border: 0;
+  background: var(--sub-title);
+  padding: 0.7rem 2rem;
+  transition: all 0.2s ease;
+}
+
+.btn-sub:hover {
+  background: #15516b;
 }
 
 /* DATE */
-
-.date {
-  cursor: pointer;
-  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px !important;
-  padding: 0.8rem 1.2rem;
-}
-
-.date_input img {
-  height: 1.2rem;
-  position: absolute;
-  right: 11%;
-  top: 41%;
-  z-index: 1;
-  cursor: pointer;
-}
-
-input[type="date"]:invalid::-webkit-datetime-edit {
-  color: #999;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-input[type="date"] {
-  background-size: 1.6rem;
-  outline: none;
-  width: 10rem;
-}
-
 label {
   color: #555;
   font-weight: 500;
-}
-
-input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  position: absolute;
-  right: 8%;
-  top: 34%;
-  padding: 0.3rem;
-  opacity: 0;
-  z-index: 2;
-}
-
-input[type="time"] {
-  background-size: 1.6rem;
-  outline: none;
-  width: 10rem;
-}
-
-input[type="time"]:invalid::-webkit-datetime-edit {
-  color: #999;
-  font-weight: 500;
   font-size: 14px;
 }
 
-input[type="time"]:focus:before {
-  width: 0;
-  content: "";
-}
-
-input[type="time"]::-webkit-calendar-picker-indicator {
-  opacity: 1;
-  position: absolute;
-  right: 8%;
-  top: 34%;
-  padding: 0.3rem;
-  opacity: 0;
-  z-index: 2;
+input {
+  font-size: 14px !important;
 }
 
 .active {
   background-color: var(--sub-title) !important;
   border: 0 !important;
-}
-
-.btn-appointment {
-  background-color: var(--sub-title) !important;
-  padding: 0.7rem 2rem !important;
-}
-
-/* FORM */
-#form {
-  display: none;
-}
-
-#appointment_success {
-  display: none;
-}
-
-.check {
-  display: none;
 }
 
 select {
