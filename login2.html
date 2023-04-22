@@ -105,7 +105,8 @@
 
 <div class="container">
     <div class="logincontainer">
-    <form class="loginform">
+    <form name="loginform" method="post"
+      action="/action_page.php" onsubmit="return validateform()">
     <div class="login">
         <div class="left">
             <h1>WELCOME TO BAYANIHAN<br>HEALTHCARE</h1>
@@ -115,10 +116,9 @@
         </div>
         <div class="loginright">
             <div class="right">
-                
-                <input type="email" id="email" placeholder="Your Email"><br><br>
+                <input type="email" name="email" id="email" placeholder="Your Email"><br><br>
                 <input type="password" name="password" id="password" placeholder="Password"><br><br>
-                <input type="button" name="btnlogin" id="btnlogin" value="Sign In">
+                <input type="submit" name="btnlogin" id="btnlogin" value="Sign In">
                 <p><a href="" id="forgotpass">Forgot Password?</a></p>
                 <hr><p>or continue with</p>
                 <div class="btnemail">
@@ -275,5 +275,6 @@
     ></script>
 
     <script src="./index.js"></script>
+    <script src="signin.js"></script>
   </body>
 </html>
