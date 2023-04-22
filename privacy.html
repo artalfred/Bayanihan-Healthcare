@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/privacy.css" />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <title>Bayanihan Healthcare</title>
+  </head>
+  <body>
+    <header
+      class="w-100 border-bottom fixed-top"
+      style="
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+          rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+      "
+    >
+      <nav
+        class="d-flex justify-content-between align-items-center container-xxl"
+      >
+        <div class="d-flex justify-content-center align-items-center gap-5">
+          <a href="./index.html" class="fw-bold">
+            <img src="./img/icons/logo.png" alt="logo" class="logo" />
+          </a>
+          <ul class="d-flex gap-5 mx-5" id="navigation_list">
+            <li>
+              <a href="#" class="d-flex">Services</a>
+            </li>
+            <li>
+              <a href="#" class="d-flex">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="d-flex">Partners</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <ul
+            class="d-flex gap-4 m-0 align-items-center p-0"
+            id="navigation_list"
+          >
+            <li></li>
+            <li>
+              <a href="login2.html">
+                <button
+                  type="submit"
+                  class="btn btn-outline-primary vio-green px-4"
+                >
+                  Login
+                </button>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MENU -->
+          <div
+            class="menu"
+            onclick="myFunction(this)"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- NAVBAR -->
+    <div
+      class="collapse navbar-collapse fixed-top bg-light w-100"
+      id="navbarNav"
+      style="z-index: 500; top: 4.5rem"
+    >
+      <ul class="navbar-nav py-4 px-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find a doctor</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+
+        <div class="d-flex gap-3 mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+          </li>
+          <li>
+            <a href="#" class="d-flex"
+              ><button class="btn btn-outline-primary rounded-5">
+                Sign in
+              </button></a
+            >
+          </li>
+        </div>
+      </ul>
+    </div>
+
+<!-- about us -->
+<div class="container">
+    <div class="about">
+    <!-- <div class="aboutleft">
+        <img src="./img/aboutus.jpg" alt="image">
+
+    </div> -->
+
+    <div class="aboutright"><hr>
+        <div class="intro">
+          <h2>Privacy Policy</h2>
+            <p>THIS POLICY DESCRIBES HOW YOUR PERSONAL HEALTH INFORMATION MAY BE USED AND DISCLOSED. 
+            PLEASE REVIEW THIS NOTICE CAREFULLY. IF YOU HAVE ANY QUESTIONS, PLEASE CONTACT:</p>
+            <h5>Data Privacy Management Department <br>
+                BAYANIHAN HealthCare <br>
+                Ortigas Avenue, Pasig City <br>
+                (02) 988.1000 local 6790</h5> <br>
+
+            <h6>I.Background</h6>
+            <p>Republic Act No. 10173, also known as the Data Privacy Act of 2012 (DPA), aims to protect
+                personal data in information and communications systems both in the government and the 
+                private sector. It ensures that entities or organizations processing personal data establish
+                policies, and implement measures and procedures that guarantee the safety and security 
+                of personal data under their control or custody, thereby upholding an individuals data 
+                privacy rights.</p>
+            
+            <h6>II. Introduction</h6>
+            <p>a. Policy Statement</p>
+            <p>This Patient Privacy Policy ("Policy")sets forth the standards of The Medical City governing 
+                the privacy and security of patients' personal information, particularly health information, 
+                as well as the controlled release and disclosure of such information, consistent with the 
+                Data Privacy Act of 2012 and other applicable laws.
+
+                This Policy describes the manner in which The Medical City (TMC) may collect, hold, use, 
+                share, and discard the above-mentioned information. By availing of the services provided by 
+                TMC, you signify your acceptance of this policy and terms of service. Your continued availment
+                of the services of TMC following the posting of changes to this policy will be deemed your 
+                acceptance of those changes.</p>
+
+            <p>b. Our Commitment to Protect Your Privacy</p>
+            <p>We understand that information about you and your health is personal. We are committed to protecting 
+               your health information. As a patient of The Medical City and its other related entities, the care and 
+               treatment you receive is confidential in nature and will be recorded in a medical record. We use and 
+               share this record to provide you with quality care and to comply with certain legal requirements. 
+               This record will be available to all health care and allied health professionals who need access as 
+               described in this Policy, many of whom will be involved in your treatment.
+
+                As part of our commitment to maintaining the confidentiality of your care, The Medical City will 
+                share your information only to the extent necessary to ensure with your treatment, conduct our 
+                professional operations, collect payment for the services we provide you, and to comply with the 
+                laws that govern health care. While we may need your personal information for other purposes, 
+                we will not use or disclose your information without your permission.</p>
+            <p>c. Our Patient Privacy Policy</p>
+            <p>The Medical City may provide you with a Patient Privacy Policy pamphlet, upon your request, that explains 
+                our privacy practices and your rights regarding your personal and health information. Consent to the collection, 
+                use, disclosure, and disposition of your personal and health information will be obtained upon admission or 
+                consultation or by availing of the various services provided by the institution.
+
+                You may ask for a copy of our current Policy in any of the patient registration areas throughout the hospital, 
+                the Data Privacy Management Department as well as with the Center for Patient Experience. You can also view 
+                and print a copy of our current Policy by visiting our website at www.themedicalcity.com and clicking on Patient 
+                Privacy Policy. Likewise, Privacy Notices may be found publicly posted in a number of places.
+                
+                The Medical City may, from time to time, review and update this Policy to adapt to changing corporate practices, 
+                and to take into account new laws and technology. We reserve the right to make the revised or changed Policy effective 
+                for health information we already have about you as well as any information we receive in the future.The use, storage 
+                and disclosure of all data held by TMC will be governed by the most recent privacy policy, posted on www.themedicalcity.com. 
+                TMC will notify you of any amendments by posting an updated version of the policy on this website.</p>
+
+            <h6>III. Definition of Terms</h6>
+            <p>a. Data subject” refers to an individual whose personal, sensitive personal, or privileged information is processed;</p>
+            <p>b. “Consent of the data subject” refers to any freely given, specific, informed indication of will, whereby the data subject agrees to the collection and processing of his or her personal, sensitive personal, or privileged information. Consent shall be evidenced by written, electronic or recorded means. It may also be given on behalf of a data subject by a lawful representative or an agent specifically authorized by the data subject to do so;</p>
+            <p>c. “Data sharing” is the disclosure or transfer to a third party of personal data under the custody of The Medical City. <br> <br>
+
+                d. “Personal data” refers to all types of personal information; <br> <br>
+                
+                e. “Personal information” refers to any information, whether recorded in a material form or not, from which the identity of an individual is apparent or can be reasonably and directly ascertained by the entity holding the information, or when put together with other information would directly and certainly identify an individual; <br> <br>
+                
+                f. Sensitive personal information refers to personal information: <br> <br>
+                
+                i. About an individual’s race, ethnic origin, marital status, age, color, and religious, philosophical or political affiliations; <br> <br>
+                
+                ii. About an individual’s health, education, genetic or sexual life of a person, or to any proceeding for any offense committed or alleged to have been committed by such individual, the disposal of such proceedings, or the sentence of any court in such proceedings; <br> <br>
+                
+                iii. Issued by government agencies peculiar to an individual which includes, but is not limited to, social security numbers, previous or current health records, licenses or its denials, suspension or revocation, and tax returns; and <br> <br>
+                
+                iv. Specifically established by an executive order or an act of Congress to be kept classified. <br> <br>
+                
+                g. “Privileged information” refers to any and all forms of data, which, under the Rules of Court and other pertinent laws constitute privileged communication; <br> <br>
+                
+                h. “Processing” refers to any operation or any set of operations performed upon personal data including, but not limited to, the collection, recording, organization, storage, updating or modification, retrieval, consultation, use, consolidation, blocking, erasure or destruction of data. Processing may be performed through automated means, or manual processing, if the personal data are contained or are intended to be contained in a filing system; <br> <br>
+                
+                i. “Personal data breach” refers to a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed; <br> <br>
+                
+                j. “Security incident” is an event or occurrence that affects or tends to affect data protection, or may compromise the availability, integrity, and confidentiality of personal data. It includes incidents that would result to a personal data breach, if not for safeguards that have been put in place;</p>
+
+            <h6>IV. Scope</h6>
+            <p>This Policy pertains to all individuals, departments, and units in The Medical City who have access to, use, or disclose protected health information. The Policy is administered by the Data Privacy Management Department. It is intended to serve as a foundation for privacy practices of TMC. Divisions, departments, or units within TMC may impose privacy safeguards in addition to those required by this policy and procedure.</p>
+            <h6>V. Processing of Health Information</h6>
+
+            <p>This section describes ways that The Medical City use and disclose health information. It does not list every possible use or disclosure, but the ways your information may be used and disclosed fall into the following categories:
+
+                0. Treatment and Communication <br> <br>
+                0. Billing and Collection <br> <br>
+                0. Health Care Processes and Professional Services<br> <br>
+                0. Legal Compliance and Health-Related Services<br> <br>
+                0. Research and Training<br> <br>
+                
+                A. Collection, Use and Disclosure <br> <br>
+                
+                a. Treatment and Communication<br> <br>
+                
+                Your health information is used to provide you with medical treatment or services. We may use and share health information about you with physicians, nurses, allied medical personnel, residents, fellows and medical students, or other TMC personnel involved in your care. Different departments of the hospital may also share health information about you to coordinate the services you need, such as pharmacy, dietary, laboratory and other diagnostic centers.<br> <br>
+                
+                In special cases, we may also disclose your health information to providers not affiliated with the Hospital to facilitate care or treatment they provide you. These include other physicians outside The Medical City who are involved in your care outside the hospital setting or in case of hospital transfers, to the receiving hospital. <br> <br>
+                
+                Electronic exchange of health information helps ensure better coordination of care. The physicians and nurses of The Medical City utilize digital technology in order to facilitate quicker and prompt referrals within the healthcare team. They may use messaging platforms such as SMS, emails, Viber, Telegram, and other similar services in order to communicate with the team. Alternatively, you may access your results through our online platform. <br> <br>
+                
+                Upon your request, we may send electronic results of your laboratory and other diagnostic tests to you or your authorized representative. We may also use and disclose health information to contact you as a reminder that you have an appointment for care at The Medical City. We will communicate with you using the information (such as telephone number and email address) that you provide us. <br> <br>
+                
+                Unless you notify us to the contrary, we may use the contact information you provide to communicate general information about your care such as appointment location, department, date and time, as well as for patient experience and satisfaction surveys. <br> <br>
+                
+                b. Billing and Collection <br> <br>
+                
+                We may use and disclose your personal and health information to confirm, bill and receive payment for health care services that we or others provide to you. This includes submission of your health information to receive payment from Philhealth, your health maintenance organization (HMO), insurance company, or other party that pays for some or all of your health care or to verify that your payor will pay for your health care. We may also tell your payor about a treatment you are going to receive to determine whether your payor will cover the treatment. For certain services, if your permission is needed to release health information to obtain payment, you will be asked for permission. <br> <br>
+                
+                In cases of non-payment, your personal and health information will be sent to legal services for collection purposes who may conduct credit investigations and send demand letters to collect payment for services rendered to you. <br> <br>
+                
+                c. Health Care Processes and Professional Services <br> <br>
+                
+                We may use and disclose health information for health care operations. This includes functions necessary to run The Medical City and assure that all patients receive quality care. We may also share your information with affiliated health care providers so that they may jointly perform certain business operations along with TMC. We may combine health information about many of our patients to improve on the services being offered, to determine what services are no longer needed and to assess whether certain treatments are effective. <br> <br>
+                
+                We may share information with physicians, nurses, allied medical personnel, residents, fellows and medical students, or other TMC personnel to ensure quality assurance and compliance with standards of care. We may also compare the health information we have with information from other hospitals to see where we can improve the care and services we offer. In these instances, The Medical City will work to anonymize, mask, encrypt or de-identify your personal and health information as much as possible. <br> <br>
+                
+                The Hospital contracts with outside entities that perform business services for us, such as the Joint Commission International, government entities, billing companies, management consultants, quality assurance reviewers, accounting or legal firms. In certain circumstances, we may need to share your health information with a business associate so it can perform a service on our behalf. We will have a data sharing agreement or written contract in place with the business associate requiring protection of the privacy and security of your health information. <br> <br>
+                
+                d. Legal Compliance and Health-Related Services <br> <br>
+                
+                We may disclose your information to the Department of Health and other appropriate government entities for activities authorized by law such as audits, investigations, inspections, and licensure. <br> <br>
+                
+                When necessary to prevent a serious threat to your health and safety or the health and safety of others, we may use and disclose certain information about you. Such disclosure will only be to someone able to prevent or respond to the threat, such as law enforcement, or a potential victim. <br> <br>
+                
+                We may also use or disclose health information about you when required to do so by laws not specifically mentioned in this Policy. <br> <br>
+                
+                e. Research and Training <br> <br>
+                
+                As an affiliated hospital for the Ateneo School of Medicine and Public Health (ASMPH), medical students may use and access your health information. We will have a data sharing agreement or written contract in place with ASMPH requiring protection of the privacy and security of your health information. <br> <br>
+                
+                Being a training ground for future doctor specialists with over ten accredited residency and fellowship programs, your health information may be used and disclosed in training and education. Daily endorsement rounds, weekly department conferences, audits, morbidity, and mortality conferences are requirements for continued accreditation of our clinical programs and may involve the use of your health information. Limited information about you and your treatment may be used for the purposes of accreditation of our residency and fellowship programs and specialty board certification of our trainees. <br> <br>
+                
+                The Medical City has an active research program. We generally ask for your written authorization before asking you to participate, use your health information, or share it with others to conduct research. Under limited circumstances, we may use and disclose your health information without your authorization. In these situations, we will anonymize, mask, encrypt or de-identify data to protect your information and so that no patient is individually identifiable. We will obtain approval through an independent review process to ensure that research conducted without your authorization poses minimal risk to your privacy. <br> <br>
+                
+                f. Other uses and disclosures <br> <br>
+                
+                The Medical City does not require prior consent or authorization in the disclosure of your health information in the following instances: <br> <br>
+                
+                □ Public Health Activities <br> <br>
+                
+                □ To prevent or control disease, injury or disability;<br> <br>
+                □ To report births and deaths;<br> <br>
+                □ To report the abuse or neglect of children, elders and dependent adults;<br> <br>
+                □ To report reactions to medications or problems with products;<br> <br>
+                □ To notify you of the recall of products you may be using;<br> <br>
+                □ To notify a person who may have been exposed to a disease or may be at risk for contracting or spreading a disease or condition;<br> <br>
+                □ To notify the appropriate government authority if we believe you have been the victim of abuse, neglect or domestic violence; we will only make this disclosure when required or authorized by law;<br> <br>
+                □ To notify the Department of Health and other appropriate government entities when you seek treatment at The Medical City for certain diseases or conditions required to be reported by law.<br> <br>
+                
+                □ Disputes and Lawsuits <br><br>
+                
+                To ensure the quality of care you receive while seeking treatment at The Medical City, we may access and disclose your health information if you have concerns or complaints regarding your medical management at The Medical City. We may also access and disclose your health information if you bring a lawsuit against TMC, its officers, nurses, allied medical personnel and other employees, its residents, fellows and physicians. <br><br>
+                                
+                If you are involved in a lawsuit, we may disclose health information about you in response to a court or administrative order or in response to a subpoena, legally enforceable discovery request, or other lawful process by someone else involved in the dispute. <br><br>
+                
+                B. Storage, Security, Retention and Destruction <br><br>
+                
+                The Medical City will ensure that personal and health information under its custody are protected against any accidental or unlawful destruction, alteration and disclosure as well as against any other unlawful processing. TMC will implement appropriate security measures in storing collected personal and health information. All health information gathered and kept in medical records shall be retained for as long as the patient regularly seeks treatment at the institution. Hard copies of medical records more than five (5) years old shall be kept at a secure off-site facility. After an inactive period of ten (10) years from the last outpatient consult and fifteen (15) years from the last in-patient confinement, hard copies of medical records shall be brought to an appropriate facility for melting and destruction with secure protocols in place. Electronic copies of medical records shall be retained for a similar period.</p>
+
+                <h6>VI. Rights Relating to your Health Information</h6>
+                <p>An important part of The Medical City's Privacy Policy is this section which explains your data privacy rights regarding your health information. You (or your authorized representative) have the right to: <br><br>
+
+                    ○ Be informed <br><br>
+                    ○ Reasonable access to your health information <br><br>
+                    ○ Request a correction to your personal information <br><br>
+                    ○ An accounting of hospital disclosures of your health information <br><br>
+                    ○ Request restrictions on certain uses and disclosures of your health information <br><br>
+                    ○ Receive a copy of The Medical City's Privacy Policy <br><br>
+                    
+                    a. Information <br><br>
+                    
+                    You have the right to be informed that your personal and health information will be, are being, or were, collected and processed. You have the right to be informed of the purposes for which they will be, are being, or were processed and the duration for which the information will be kept. <br><br>
+                    
+                    Reasonable Access of your Health Information <br><br>
+                    
+                    You have the right to obtain a copy of your pertinent health information. The medical information available to you are the following: <br><br>
+                    
+                    □ Clinical Abstract/Discharge Summary <br><br>
+                    □ Laboratory and other diagnostic results <br><br>
+                    □ Consent for Admission and Procedure<br><br>
+                    □ Record of Operation or Delivery<br><br>
+                    □ Operative Technique<br><br>
+                    □ Medical Certificate or Certificate of Confinement <br><br>
+                    
+                    To request for a copy of your medical records, proceed to the Health Information Department and fill out a Request for Medical Information or contact them for the link to the electronic request form. TMC may charge a fee for the cost of providing copies to you <br><br>
+                    
+                    c. Request a Correction to your Personal Information <br><br>
+                    
+                    If you believe that the personal information The Medical City has on file about you is incorrect or incomplete, you may ask us to correct the personal information in your records. If your personal information is accurate and complete, or if the information was not created by the Hospital, we may deny your request. If we deny any part of your request, we will provide you with a written explanation of our reasons for doing so. Requests to make a correction to your records must be in writing and must describe each item that you want changed and the reason you are requesting the change. We may require additional documentation from you or your authorized representative as proof before processing your request. <br><br>
+                    
+                    d. An Accounting of Hospital Disclosures of your Personal and Health Information <br><br>
+                    
+                    You have the right to request a list of how your personal information was shared for purposes other than treatment, payment, health care operations and legal compliance. Your health information on the other hand, will never be shared with third parties without your consent. <br><br>
+                    
+                    e. Request Restrictions on Certain Uses and Disclosures of Your Medical Information <br><br>
+                    
+                    You have the right to request reasonable restrictions on certain uses or disclosures of your personal and health information. Requests for restrictions must be in writing. In most cases, we are not required to agree to your requested restriction. However, if we do agree, we will comply with your request unless the information is needed to provide you emergency treatment or comply with the law. <br><br>
+                    
+                    Some examples of restriction requests that the Hospital cannot honor include: <br><br>
+                    
+                    □ Requests to restrict residents from accessing your medical information. <br><br>
+                    □ Requests restricting the hospital from giving your name to an insurance company that will be asked to pay a portion of your bill. <br><br>
+                    □ Request restricting the hospital from reporting your identity and condition to an agency or organization where the hospital is required by law to do so.</p>
+                <h6>VII. Inquiries and Complaints</h6>
+                <p>The confidentiality of your health information is a significant part of the care we provide to you. For matters relating to the processing of your protected health information or if you believe that your privacy rights have been violated, you may file a written complaint with our Data Privacy Management Department via:</p>
+                <h6>Email: dpo@themedicalcity.com <br>
+
+                    Mail: Data Protection Officer <br>
+                    Data Privacy Management Department <br>
+                    The Medical City <br>
+                    Ortigas Avenue, Pasig City</h6>
+
+                <h6>VIII. Effectivity</h6>
+                <p>The provisions of this Policy are effective this 01 day of March 2018 until amended.</p>
+        </div>
+
+    </div>
+    </div>
+</div>
+
+    <!-- FOOTER -->
+    <div class="vio-green-bg">
+      <div class="container-xxl" style="margin-top: 12rem">
+        <footer
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top gy-2"
+        >
+          <div class="col col-lg-2">
+            <a href="./index.html" class="fw-bold">
+              <img src="./img/icons/bayanihan2.png" alt="logo" class="logo" />
+            </a>
+
+            <div class="d-flex gap-3 mt-4">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                The BAYANIHAN HealthCare <br />
+                Ortigas Avenue, Pasig City, <br />
+                Metro Manila, Philippines
+              </p>
+            </div>
+
+            <div class="d-flex gap-3">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                (632) 8988-1000 <br />
+                (632) 8988-1000
+              </p>
+            </div>
+
+            <div class="d-flex gap-3">
+              <img
+                src="./img/icons/doctor/location.png"
+                alt="location"
+                style="height: 1rem"
+              />
+              <p class="text-white-50 footer_fs">
+                mail@bayanihanhealthcare.com
+              </p>
+            </div>
+          </div>
+
+          <div class="col mb-3"></div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">SERVICES</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="aboutus.html" class="nav-link p-0 text-white-50">About Us</a>
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Health Services</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Health Resources</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">ABOUT US</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >The Bayanihan Healthcare</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="misionvision.html" class="nav-link p-0 text-white-50"
+                  >Mission and Vision</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Quality and Safe</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col footer_tag">
+            <h6 class="mb-3 footer_title text-white-50">LATEST NEWS</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item footer_fs">
+                <a href="privacy.html" class="nav-link p-0 text-white-50"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li class="nav-item footer_fs">
+                <a href="#" class="nav-link p-0 text-white-50"
+                  >Accessibility Statement</a
+                >
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      class="w-100 d-flex align-items-center footer_bottom_parent"
+      style="height: 3.6rem; background: #264653"
+    >
+      <div class="container-xxl footer_bottom">
+        <div class="d-flex gap-3 align-items-center">
+          <h6 class="mb-0 footer_fs text-white-50">Privacy Policy</h6>
+          <h6 class="mb-0 footer_fs text-white-50">|</h6>
+          <h6 class="mb-0 footer_fs text-white-50">Terms and Conditions</h6>
+        </div>
+
+        <div>
+          <h6 class="mb-0 footer_fs text-white-50">
+            Copyright © 2023 BAYANIHAN HealthCare. All rights reserved.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
