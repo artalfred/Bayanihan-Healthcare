@@ -54,11 +54,11 @@ p{
 /* end */
 
 @media only screen and (max-width: 1008px) {
-    .aboutleft img{
-        display: none;
+    .aboutleft{
+        width: 100%;
 }
     .aboutright{
-        width: auto;
+        width: 100%;
     }
 
 }
