@@ -2,6 +2,7 @@ function clientHistory() {
   let appointments = document.querySelector("#client_list");
 
   let data = JSON.parse(localStorage.getItem("history"));
+  let history_display = document.querySelector("#history_display");
 
   let items = data.map(function (client, index) {
     const name = client.Name;
@@ -19,7 +20,7 @@ function clientHistory() {
                 </div>
               </div>
             </div>
-        `;
+          `;
   });
 
   appointments.innerHTML = items.join("");

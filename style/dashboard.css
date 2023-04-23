@@ -1,6 +1,10 @@
 .dashboard {
   height: 25rem;
   padding-top: 10rem;
+  background-image: url(../img/dashboard/dashboard.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .dashboards {
@@ -41,4 +45,9 @@
 #client_search ion-icon {
   font-size: 1.2rem;
   color: #fff;
+}
+
+.profile img {
+  height: inherit;
+  width: inherit;
 }
