@@ -1,8 +1,23 @@
+// NAVIGATIONS
+fetch("./navbar.html")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("navigations").innerHTML = html;
+  });
+
+// FOOTER
+fetch("./footer.html")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("footer").innerHTML = html;
+  });
+
 // MENU
 function myFunction(x) {
   x.classList.toggle("change");
 }
 
+// APPOINTMENT
 const date_time = document.querySelector("#date_time");
 const form = document.querySelector("#form");
 const appointment_success = document.querySelector("#appointment_success");
