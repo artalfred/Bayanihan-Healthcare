@@ -11,7 +11,9 @@
   
   a {
     text-decoration: none !important;
-    color: #000 !important;
+    color: #216d57 !important;
+    font-weight: bolder;
+       
   }
   
   ul {
@@ -111,15 +113,20 @@
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-around;
-    margin: 80px 50px 0px 0px;   
+    margin: 120px 50px 0px 0px;   
+  
 }
 
 .loginright{
     margin: 30px;
     padding: 20px;
-    /* border: 1px solid rgb(179, 177, 177); */
-    border-radius: 10px;
-    background-color: white;
+    border: 10px solid #216d57;
+    border-image: linear-gradient(45deg, #216d57, rgb(19, 175, 196)) 1;
+    /* border-radius: 20px; */
+    /* background-color: white; */
+    box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
+    -webkit-box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
+    -moz-box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
 }
 
 .left{
@@ -142,13 +149,21 @@
     flex-direction: row;
 }
 
-#email, #password {
+#email{
+    margin-top: 30px;
     width: 100%;
     padding-left: 20px;
     height: 50px;
     border-radius: 5px;
 }
 
+
+#password {
+  width: 100%;
+  padding-left: 20px;
+  height: 50px;
+  border-radius: 5px;
+}
 
 #btnlogin {
     cursor: pointer;
@@ -170,18 +185,14 @@
 }
 
 .right p{
-    text-align: center;
-             
-}
-
-#forgotpass, #signup{
-  color:#0b004b;
+  text-align: center;
+  
 }
 
 .right img{
   align-items: center;
-  width: 60px;
-  padding: 10px;
+  width: 40px;
+  padding: 5px;
   
 }
 .btnemail{
