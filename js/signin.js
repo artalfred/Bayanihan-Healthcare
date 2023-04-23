@@ -14,7 +14,7 @@ loginForm.addEventListener("submit", (event) => {
   );
 
   if (account) {
-    window.location.href = "./Makati.html";
+    window.location.href = "./Manila.html";
   } else {
     // Otherwise, display error message
     alert("error email & password");

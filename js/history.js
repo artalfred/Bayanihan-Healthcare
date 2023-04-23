@@ -1,10 +1,9 @@
 function clientHistory() {
-  let appointments = document.querySelector("#client_list");
+  let clientListHistory = document.querySelector("#clientHistoryData");
 
-  let data = JSON.parse(localStorage.getItem("history"));
-  let history_display = document.querySelector("#history_display");
+  let history = JSON.parse(localStorage.getItem("history"));
 
-  let items = data.map(function (client, index) {
+  let items = history.map(function (client, index) {
     const name = client.Name;
     const email = client.Email;
     const number = client.number;
@@ -23,7 +22,7 @@ function clientHistory() {
           `;
   });
 
-  appointments.innerHTML = items.join("");
+  clientListHistory.innerHTML = items.join("");
 }
 
 clientHistory();

@@ -38,7 +38,50 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <div id="navigations"></div>
+    <header
+      class="w-100 border-bottom fixed-top"
+      style="
+        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+          rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+      "
+    >
+      <nav
+        class="d-flex justify-content-between align-items-center container-xxl"
+      >
+        <div class="d-flex justify-content-center align-items-center gap-5">
+          <a href="./Manila.html" class="fw-bold">
+            <img src="./img/icons/logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <ul class="d-flex gap-4 m-0 align-items-center p-0">
+            <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+              <div
+                class="border rounded-circle overflow-hidden"
+                style="height: 2.8rem; width: 2.8rem"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./img/dashboard/manila.png"
+                  alt="profile"
+                  style="height: 100%"
+                />
+              </div>
+              <h6 class="text-dark fs-6 mb-0">MMC</h6>
+              <div class="dropdown">
+                <ul class="dropdown-menu border-0">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="dashboard">
       <div class="container-xxl">
@@ -50,7 +93,7 @@
         <div style="margin-top: 5rem">
           <ul class="d-flex gap-5 dashboard_links">
             <li>
-              <a href="./Makati.html" class="text-light">Appointments</a>
+              <a href="./Manila.html" class="text-light">Appointments</a>
             </li>
             <li>
               <a
@@ -87,15 +130,15 @@
           <ion-icon name="search-outline"></ion-icon>
         </span>
       </div>
-      <div class="row mt-5 gy-4" id="client_list"></div>
+      <div class="row mt-5 gy-4" id="clientInfo_"></div>
     </div>
 
     <!-- FOOTER -->
     <div id="footer"></div>
 
     <!-- MAIN JAVASCRIPT -->
-    <script src="./js/index.js"></script>
     <script src="./js/clientInfo.js"></script>
+    <script src="./js/index.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
