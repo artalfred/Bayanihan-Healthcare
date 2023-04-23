@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Make an appointment</title>
+    <title>Makati Hospital</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -28,6 +28,7 @@
 
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/appointment.css" />
+    <link rel="stylesheet" href="../style/dashboard.css" />
   </head>
   <body>
     <header class="w-100 border-bottom fixed-top">
@@ -99,156 +100,32 @@
       </ul>
     </div>
 
-    <section class="appointment">
-      <div class="container">
-        <h1 class="fw-semibold text-center vio-green mt-5">
-          Appointment booking
-        </h1>
+    <div class="dashboard">
+      <div class="container-xxl">
+        <h1 class="display-5 fw-semibold text-dark">Dashboard</h1>
 
-        <div
-          class="d-flex gap-2 justify-content-center align-items-center mt-4"
-        >
-          <nav aria-label="Page navigation">
-            <ul class="d-flex gap-2 pagination align-items-center">
-              <li class="page-item">
-                <a
-                  class="page-link active rounded-circle text-light position-relative"
-                  href="#"
-                  style="padding: 1.6rem"
-                  ><span
-                    class="position-absolute top-50 fw-normal start-50 translate-middle"
-                    >1</span
-                  ></a
-                >
-              </li>
-              <div
-                style="height: 2px; background-color: #888; width: 3rem"
-              ></div>
-              <li class="page-item">
-                <a
-                  class="page-link rounded-circle position-relative"
-                  href="#"
-                  style="padding: 1.6rem"
-                  id="appointment_two"
-                  ><span
-                    class="position-absolute top-50 fw-normal start-50 translate-middle"
-                    >2</span
-                  ></a
-                >
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div id="date_time">
-          <h5 class="fw-semibold text-center vio-green mt-4">
-            Complete the form to get started
-          </h5>
-
-          <div class="d-flex justify-content-center mt-5">
-            <form
-              action="./successBooking.html"
-              class="row g-3"
-              style="width: 45rem"
-              id="appointmentForm"
-            >
-              <div class="col-md-6">
-                <label for="fullName" class="form-label">Full name</label>
-                <input
-                  type="text"
-                  class="form-control py-2"
-                  id="fullName"
-                  placeholder="Name"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="email" class="form-label">Email</label>
-                <input
-                  type="email"
-                  class="form-control py-2"
-                  id="email"
-                  placeholder="Enter your email"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="number" class="form-label">Phone number</label>
-                <input
-                  type="number"
-                  class="form-control py-2"
-                  id="number"
-                  placeholder="Enter your phone number"
-                  required
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="reasonForAppointment" class="form-label"
-                  >Reason for appointment</label
-                >
-                <select id="reasonForAppointment" class="form-select" required>
-                  <option selected>Select</option>
-                  <option value="consultation">Consultation</option>
-                  <option value="follow-up">Follow-up</option>
-                  <option value="treatment">Treatment</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <label for="number" class="form-label"
-                  >Select a City/Hospital</label
-                >
-                <select id="city_hospital" class="form-select">
-                  <option selected>Select a City/Hospital</option>
-                  <option value="Makati Medical Center">
-                    Makati Medical Center
-                  </option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="number" class="form-label">Date</label>
-                    <input
-                      type="date"
-                      class="form-control py-2"
-                      id="date"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="number" class="form-label">Time</label>
-                    <input
-                      type="time"
-                      class="form-control py-2"
-                      id="time"
-                      step="60"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-12">
-                <label for="message" class="form-label"
-                  >Additional message (optional)</label
-                >
-                <textarea
-                  class="form-control py-2"
-                  id="message"
-                  rows="3"
-                ></textarea>
-              </div>
-
-              <div class="d-flex justify-content-center mt-5">
-                <button type="submit" class="btn-sub text-light px-4 rounded-2">
-                  Continue
-                </button>
-              </div>
-            </form>
-          </div>
+        <div style="margin-top: 6rem">
+          <ul class="d-flex gap-5 dashboard_links">
+            <li>
+              <a href="./Makati.html" class="text-dark pb-3 active_dashboard"
+                >Appointments</a
+              >
+            </li>
+            <li>
+              <a href="./clientInfo.html" class="text-dark"
+                >Client information</a
+              >
+            </li>
+            <li><a href="./history.html" class="text-dark">History</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+
+    <div class="appointments_list pt-5 container-xxl">
+      <h2 class="fw-semibold">Upcoming Appointment</h2>
+      <div class="row mt-5 gy-4" id="client_list"></div>
+    </div>
 
     <!-- FOOTER -->
     <div class="vio-green-bg">
@@ -385,6 +262,7 @@
 
     <!-- MAIN JAVASCRIPT -->
     <script src="../js/index.js"></script>
+    <script src="../js/appointment.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
