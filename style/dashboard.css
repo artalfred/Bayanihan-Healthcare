@@ -1,0 +1,44 @@
+.dashboard {
+  height: 25rem;
+  padding-top: 10rem;
+}
+
+.dashboards {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.dashboard_links {
+  margin-top: 4rem;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.dashboard_links::-webkit-scrollbar {
+  display: none;
+}
+
+.dashboard_links li {
+  max-width: 150px; /* set a maximum width for the li elements */
+}
+
+.dashboard_links li a {
+  display: inline-block;
+  max-width: 100%; /* set a maximum width for the anchor tags */
+}
+
+.active_dashboard {
+  border-bottom: 3px solid var(--green);
+}
+
+/* APPOINTMENT LIST */
+.appointments_list {
+  height: 40rem;
+}
+
+/* CLIENT */
+
+#client_search ion-icon {
+  font-size: 1.2rem;
+  color: #fff;
+}

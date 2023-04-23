@@ -28,8 +28,8 @@ let appointment = clientsData ? clientsData : [];
 appointmentForm.addEventListener("submit", function (event) {
   event.preventDefault(); // prevent form submission
 
-  const name = document.querySelector("#fullName").value;
-  const email = document.querySelector("#email").value;
+  let name = document.querySelector("#fullName").value;
+  let email = document.querySelector("#email").value;
   let dateMonth = document.querySelector("#date").value;
   let time = document.querySelector("#time").value;
   let number = document.querySelector("#number").value;
@@ -38,12 +38,29 @@ appointmentForm.addEventListener("submit", function (event) {
   ).value;
   let city = document.querySelector("#city_hospital").value;
 
+  let dateValue = dateMonth;
+  let formattedDate = new Date(dateValue).toLocaleDateString("en-US", {
+    month: "short",
+    day: "2-digit",
+    year: "numeric",
+  });
+
+  let timeValue = time;
+  let formattedTime = new Date("1970-01-01T" + timeValue).toLocaleTimeString(
+    "en-US",
+    {
+      hour: "numeric",
+      minute: "2-digit",
+      hour12: true,
+    }
+  );
+
   appointment.push({
     Name: name,
     Email: email,
     number: number,
-    dateMonth: dateMonth,
-    time: time,
+    dateMonth: formattedDate,
+    time: formattedTime,
     reason_appointment: reason_appointment,
     city: city,
   });
@@ -69,15 +86,4 @@ function confirmed() {
     date: dates,
     time: time,
   });
-}
-
-function makeAnotherAppointment() {
-  dateMonth.value = "";
-  time.value = "";
-  fullName.value = "";
-  email.value = "";
-  number.value = "";
-  reason_appointment.value = "";
-  city.value = "";
-  message.value = "";
 }
