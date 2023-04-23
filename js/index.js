@@ -69,21 +69,3 @@ appointmentForm.addEventListener("submit", function (event) {
 
   window.location.href = "./successBooking.html";
 });
-
-// APPOINTMENT
-
-function confirmed() {
-  const dates = document.querySelector("#date").value;
-  const time = document.querySelector("#time").value;
-  const fullName = document.querySelector("#name").value;
-  const email = document.querySelector("#email").value;
-  const number = document.querySelector("#number").value;
-
-  appointment.push({
-    Name: fullName,
-    email: email,
-    phoneNumber: number,
-    date: dates,
-    time: time,
-  });
-}
