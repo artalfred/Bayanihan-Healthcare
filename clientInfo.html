@@ -90,7 +90,7 @@
           Good morning, Manila Medical Center Have a wonderfull day!
         </p>
 
-        <div style="margin-top: 5rem">
+        <div class="dashboard__links" style="margin-top: 5rem">
           <ul class="d-flex gap-5 dashboard_links">
             <li>
               <a href="./Manila.html" class="text-light">Appointments</a>
@@ -108,12 +108,12 @@
       </div>
     </div>
 
-    <div class="appointments_list pt-5">
+    <div class="pt-5">
       <div class="container-xxl">
         <h2 class="fw-normal vio-green">
           Patient's personal and contact information
         </h2>
-        <div class="input-group mb-3 w-50 mt-4">
+        <div class="input-group mb-3 w-50 mt-4 client_searchbar">
           <input
             type="text"
             class="form-control py-2 px-4"
@@ -131,12 +131,12 @@
             <ion-icon name="search-outline"></ion-icon>
           </span>
         </div>
-        <div class="row mt-5 gy-4" id="clientInfo_"></div>
+        <div class="row mt-5 gy-4 dashboard_record" id="clientInfo_"></div>
       </div>
-
-      <!-- FOOTER -->
-      <div style="margin-top: 24rem" id="footer"></div>
     </div>
+
+    <!-- FOOTER -->
+    <div style="margin-top: 24rem" id="footer"></div>
 
     <!-- MAIN JAVASCRIPT -->
     <script src="./js/clientInfo.js"></script>

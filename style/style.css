@@ -158,6 +158,10 @@ input {
   box-shadow: none !important;
 }
 
+.deleted {
+  background-color: brown !important;
+}
+
 /* SECTION 2 */
 .section-2 {
   height: auto;
@@ -310,6 +314,24 @@ footer {
 
   .footer_tag {
     margin-top: 0rem !important;
+  }
+
+  /* CLIENT INFORMATION */
+  .client_searchbar {
+    width: 100% !important;
+  }
+
+  .dashboard {
+    height: 20rem !important;
+    padding-top: 8rem !important;
+  }
+
+  .dashboard__links {
+    margin-top: 3rem !important;
+  }
+
+  .dashboard_record {
+    margin-top: 0 !important;
   }
 }
 

@@ -164,17 +164,22 @@
 
               <div class="col-md-12">
                 <label for="message" class="form-label"
-                  >Additional message (optional)</label
+                  >Health Condition Notes</label
                 >
                 <textarea
                   class="form-control py-2"
                   id="message"
+                  required
                   rows="3"
                 ></textarea>
               </div>
 
               <div class="d-flex justify-content-center mt-5">
-                <button type="submit" class="btn-sub text-light px-4 rounded-2">
+                <button
+                  type="submit"
+                  class="btn-sub text-light px-4 rounded-2"
+                  onclick="submitButton()"
+                >
                   Continue
                 </button>
               </div>
