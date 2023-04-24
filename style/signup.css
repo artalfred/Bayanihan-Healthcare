@@ -104,23 +104,8 @@
     padding: 0.7rem 2rem !important;
   }
   
-  /* login */
+  /* signup */
 
-
-.login_nav {
-  background: transparent !important;
-}
-
-input {
-  outline: none !important;
-}
-
-.login_ {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
-}
-
-.login_::placeholder {
-  font-size: 14px;
   
 .login{
     display: flex;
@@ -130,26 +115,22 @@ input {
     justify-content:space-around;
     margin: 80px 50px 0px 0px;   
   
-
 }
 
 .loginright{
     margin: 30px;
     padding: 20px;
     border: 10px solid #216d57;
-    border-image: linear-gradient(45deg, #216d57, rgb(19, 175, 196)) 1;
+    border-image: linear-gradient(45deg,rgb(19, 175, 196), #216d57) 1;
     /* border-radius: 20px; */
     /* background-color: white; */
     box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
-    -webkit-box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
-    -moz-box-shadow: 7px 15px 18px -9px rgba(10,82,37,0.72);
 }
 
 .left{
   padding: 30px;
 
 }
-
 
 .left h1{
   font-weight: bolder;
@@ -170,29 +151,34 @@ input {
   font-weight: bolder;
 }
 
-#email{
-    margin-top: 10px;
+#username{
+    margin-top: 20px;
     width: 100%;
     padding-left: 20px;
-    height: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#email{
+    width: 100%;
+    padding-left: 20px;
+    height: 40px;
     border-radius: 5px;
 }
 
 
-#password {
+#password, #password2 {
   width: 100%;
   padding-left: 20px;
-  height: 50px;
+  height: 40px;
   border-radius: 5px;
 }
 
-
-#role1,
-#role2 {
-  border: 2px solid black;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 10px;
+#terms{
+    padding-left: 20px;
+    width: 30px;
+    height: auto;
+}
 
 #btnlogin {
     cursor: pointer;
@@ -211,7 +197,6 @@ input {
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-
 }
 
 .right p{
@@ -237,6 +222,7 @@ input {
   border-radius: 5px;
   border: 0;
   align-content: center;
+  
 }
 
 
