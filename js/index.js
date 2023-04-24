@@ -79,7 +79,7 @@ appointmentForm.addEventListener("submit", function (event) {
     time: formattedTime,
     reason_appointment: reason_appointment,
     city: city,
-    message: message,
+    healthCondition: message,
   });
 
   localStorage.setItem("clients", JSON.stringify(appointment));
