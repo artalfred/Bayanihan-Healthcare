@@ -34,7 +34,7 @@ let reason_appointment = document.querySelector("#reasonForAppointment");
 let city = document.querySelector("#city_hospital");
 let message = document.querySelector("#message");
 
-const appointmentForm = document.querySelector("#appointmentForm");
+let appointmentForm = document.querySelector("#appointmentForm");
 
 let clientsData = JSON.parse(localStorage.getItem("clients"));
 
@@ -52,6 +52,7 @@ appointmentForm.addEventListener("submit", function (event) {
     "#reasonForAppointment"
   ).value;
   let city = document.querySelector("#city_hospital").value;
+  let message = document.querySelector("#message").value;
 
   let dateValue = dateMonth;
   let formattedDate = new Date(dateValue).toLocaleDateString("en-US", {
@@ -78,6 +79,7 @@ appointmentForm.addEventListener("submit", function (event) {
     time: formattedTime,
     reason_appointment: reason_appointment,
     city: city,
+    message: message,
   });
 
   localStorage.setItem("clients", JSON.stringify(appointment));
