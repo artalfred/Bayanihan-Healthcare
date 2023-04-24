@@ -106,6 +106,21 @@
   
   /* login */
 
+
+.login_nav {
+  background: transparent !important;
+}
+
+input {
+  outline: none !important;
+}
+
+.login_ {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
+}
+
+.login_::placeholder {
+  font-size: 14px;
   
 .login{
     display: flex;
@@ -115,6 +130,7 @@
     justify-content:space-around;
     margin: 80px 50px 0px 0px;   
   
+
 }
 
 .loginright{
@@ -170,6 +186,14 @@
   border-radius: 5px;
 }
 
+
+#role1,
+#role2 {
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+
 #btnlogin {
     cursor: pointer;
     width: 100%;
@@ -187,6 +211,7 @@
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
+
 }
 
 .right p{
@@ -212,7 +237,6 @@
   border-radius: 5px;
   border: 0;
   align-content: center;
-  
 }
 
 

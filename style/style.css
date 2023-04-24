@@ -16,6 +16,10 @@ body {
   --btn-green: #00c189;
 }
 
+.italic {
+  font-family: "Playfair Display", serif !important;
+}
+
 a {
   text-decoration: none !important;
   color: #000 !important;
@@ -246,6 +250,10 @@ footer {
     display: flex;
     justify-content: center !important;
   }
+
+  .client_login {
+    margin-top: 10rem !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -308,5 +316,9 @@ footer {
 @media (max-width: 425.98px) {
   main {
     padding: 0rem 1rem !important;
+  }
+
+  .client_login {
+    margin-top: 5rem !important;
   }
 }
