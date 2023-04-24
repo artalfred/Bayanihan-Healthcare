@@ -10,7 +10,7 @@ function cancelHistory() {
     const reason_appointment = client.reason_appointment;
     const date_month = client.dateMonth;
     const date_time = client.time;
-    const message = client.message;
+    const message = client.healthCondition;
 
     return `
               <div class="col-12 col-md-6 col-lg-3">

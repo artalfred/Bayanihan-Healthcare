@@ -10,7 +10,8 @@ function clientInfo() {
     const reason_appointment = client.reason_appointment;
     const date_month = client.dateMonth;
     const date_time = client.time;
-    const message = client.message;
+    const message = client.healthCondition;
+
     return `
             <div class="col-12 col-md-6 col-lg-3">
               <div class="card rounded-0 py-3 px-3 rounded-2 border-0">

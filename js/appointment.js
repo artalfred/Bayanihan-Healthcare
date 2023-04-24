@@ -10,11 +10,9 @@ function cards() {
 
   let items = data.map(function (client, index) {
     const name = client.Name;
-    const email = client.Email;
     const reason_appointment = client.reason_appointment;
     const date_month = client.dateMonth;
     const date_time = client.time;
-    const message = client.message;
 
     return `
           <div class="col-12 col-md-6 col-lg-3">
