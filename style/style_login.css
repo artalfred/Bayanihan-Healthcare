@@ -1,12 +1,19 @@
 /* login */
 
-.login {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  margin: 120px 50px 0px 0px;
+.login_nav {
+  background: transparent !important;
+}
+
+input {
+  outline: none !important;
+}
+
+.login_ {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
+}
+
+.login_::placeholder {
+  font-size: 14px;
 }
 
 .loginright {
@@ -54,18 +61,6 @@
   border-radius: 5px;
 }
 
-#btnlogin {
-  cursor: pointer;
-  width: 100%;
-  height: 40px;
-  margin-bottom: 10px;
-  align-items: center;
-  border: 0;
-  border-radius: 10px;
-  color: white;
-  background-color: #216d57;
-}
-
 #role1,
 #role2 {
   border: 2px solid black;
@@ -94,146 +89,4 @@
   border-radius: 5px;
   border: 0;
   align-content: center;
-}
-
-/* end */
-
-/* FOOTER */
-footer {
-  background: transparent;
-  margin-top: 10rem;
-}
-
-.footer_links {
-  display: flex;
-  justify-content: end;
-}
-
-.footer_fs {
-  font-size: 12px;
-}
-
-.footer_title {
-  font-size: 14px;
-}
-
-.footer_bottom {
-  display: flex;
-  justify-content: space-between;
-  row-gap: 0.5rem;
-}
-
-.footer_tag {
-  margin-top: 1.5rem !important;
-}
-
-@media (max-width: 991.98px) {
-  .loginright {
-    margin: 0px;
-    width: 100%;
-  }
-
-  .footer_links {
-    display: flex;
-    justify-content: start;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .loginright {
-    margin: 0px;
-    width: 100%;
-  }
-
-  #navigation_list {
-    display: none !important;
-  }
-
-  .menu {
-    display: grid;
-    align-items: center;
-  }
-
-  #footer_logo {
-    display: flex;
-    justify-content: center;
-  }
-
-  #footer_links {
-    display: flex;
-    justify-content: center !important;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .loginright {
-    margin: 0px;
-    width: 100%;
-  }
-
-  .hero_title {
-    text-align: center;
-  }
-
-  .hero_title br {
-    display: none;
-  }
-
-  .hero_paragraph br {
-    display: none;
-  }
-
-  .hero_paragraph {
-    text-align: center;
-  }
-
-  .hero_btn {
-    display: flex;
-    justify-content: center;
-  }
-
-  .span_text {
-    text-align: center;
-  }
-
-  .sub-title {
-    text-align: center;
-  }
-
-  .sub-title br {
-    display: none;
-  }
-
-  .hero_btn {
-    display: flex;
-    justify-content: center;
-  }
-
-  .footer_title {
-    /* margin-bottom: 1rem !important; */
-    margin-top: 2rem !important;
-  }
-
-  .footer_bottom {
-    display: grid !important;
-  }
-
-  .footer_bottom_parent {
-    height: 4rem !important;
-  }
-
-  .footer_tag {
-    margin-top: 0rem !important;
-  }
-}
-
-@media (max-width: 425.98px) {
-  main {
-    padding: 0rem 1rem !important;
-  }
-
-  .loginright {
-    margin: 0px;
-    width: 100%;
-  }
 }
