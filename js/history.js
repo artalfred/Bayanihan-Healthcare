@@ -10,7 +10,7 @@ function clientHistory() {
 
     return `
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="card rounded-0 py-4 px-3 rounded-2 position-relative border-0">
+              <div class="card rounded-0 py-4 px-3 rounded-2 border-0">
                 <div class="card-body p-1">
                 <div class="py-1 px-3 position-absolute top-0 start-0 vio-green-bg text-light rounded-2">${index}</div>
                   <h6 class="card-title fw-semibold mt-3">${name}</h6>
