@@ -56,27 +56,61 @@
             class="d-grid client_login"
             style="width: 35rem; margin-top: 8rem"
           >
-            <h1 class="display-6 vio-green fw-bold">Sign in</h1>
-            <form name="loginform" id="loginForm" class="loginForm">
+            <h1 class="display-6 vio-green fw-bold text-center">Get started</h1>
+            <form name="loginform" id="loginForm" class="loginForm mt-4">
               <div class="right">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      class="border-0 login_ input_default"
+                      type="password"
+                      name="password"
+                      placeholder="First name"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <input
+                      class="border-0 login_ input_default"
+                      type="password"
+                      name="password"
+                      placeholder="Last name"
+                      required
+                    />
+                  </div>
+                </div>
                 <input
-                  class="border-0 login_"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Your Email"
-                  required
-                /><br /><br />
-                <input
-                  class="border-0 login_"
+                  class="border-0 login_ input_default mt-3"
                   type="password"
                   name="password"
-                  id="password"
-                  placeholder="Password"
+                  placeholder="Enter you email"
                   required
                 />
-                <p class="mt-2 text-start">
-                  <a href="#">Forgot Password?</a>
+                <input
+                  class="border-0 login_ input_default mt-3"
+                  type="password"
+                  name="password"
+                  placeholder="New password"
+                  required
+                />
+                <input
+                  class="border-0 login_ input_default mt-3"
+                  type="password"
+                  name="password"
+                  placeholder="Confirm password"
+                  required
+                />
+                <p class="mt-3 text-center">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                  />
+                  <a href="#"
+                    >I agree to the processing of my
+                    <span class="">personal data</span>.</a
+                  >
                 </p>
 
                 <button
@@ -84,46 +118,19 @@
                   class="btn btn-main text-light px-4 w-100"
                   id="btnlogin"
                 >
-                  <p class="mb-0">Sign in</p>
+                  <p class="mb-0">Sign up</p>
                 </button>
-                <div class="d-grid gap-2 mt-3">
-                  <button
-                    type="submit"
-                    class="btn btn-light vio-green px-4 w-100 d-flex align-items-center gap-3 justify-content-center login_"
-                    style="background-color: #fff !important"
-                    id="btnlogin"
-                  >
-                    <img
-                      src="./img/icons/google.png"
-                      alt="google"
-                      style="width: 2rem"
-                    />
-                    <p class="mb-0">Sign in with Google</p>
-                  </button>
-                  <button
-                    type="submit"
-                    class="btn btn-light vio-green px-4 w-100 d-flex gap-3 align-items-center justify-content-center login_"
-                    style="background-color: #fff !important"
-                    id="btnlogin"
-                  >
-                    <img
-                      src="./img/icons/facebook.png"
-                      alt="google"
-                      style="height: 2.2rem; width: 2.4rem"
-                    />
-                    <p class="mb-0">Sign in with Facebook</p>
-                  </button>
-                </div>
 
                 <hr />
 
                 <p class="vio-green">
-                  Don't have an account ?<a
+                  Already have an account ?
+                  <a
                     id="signup"
                     onclick="accountValidate()"
-                    href="./option_2.html"
+                    href="./options.html"
                   >
-                    <span style="color: var(--btn-green)">Sign Up</span>
+                    Sign in
                   </a>
                 </p>
               </div>
