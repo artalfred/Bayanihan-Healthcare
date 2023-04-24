@@ -108,33 +108,35 @@
       </div>
     </div>
 
-    <div class="appointments_list pt-5 container-xxl">
-      <h2 class="fw-normal vio-green">
-        Patient's personal and contact information
-      </h2>
-      <div class="input-group mb-3 w-50 mt-4">
-        <input
-          type="text"
-          class="form-control py-2 px-4"
-          placeholder="Search for an ID"
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-          id="searchId"
-          style="border-radius: 4px 0px 0px 4px"
-        />
-        <span
-          class="input-group-text"
-          style="background: var(--green)"
-          id="client_search"
-        >
-          <ion-icon name="search-outline"></ion-icon>
-        </span>
+    <div class="appointments_list pt-5">
+      <div class="container-xxl">
+        <h2 class="fw-normal vio-green">
+          Patient's personal and contact information
+        </h2>
+        <div class="input-group mb-3 w-50 mt-4">
+          <input
+            type="text"
+            class="form-control py-2 px-4"
+            placeholder="Search for an ID"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+            id="searchId"
+            style="border-radius: 4px 0px 0px 4px"
+          />
+          <span
+            class="input-group-text"
+            style="background: var(--green)"
+            id="client_search"
+          >
+            <ion-icon name="search-outline"></ion-icon>
+          </span>
+        </div>
+        <div class="row mt-5 gy-4" id="clientInfo_"></div>
       </div>
-      <div class="row mt-5 gy-4" id="clientInfo_"></div>
-    </div>
 
-    <!-- FOOTER -->
-    <div id="footer"></div>
+      <!-- FOOTER -->
+      <div style="margin-top: 24rem" id="footer"></div>
+    </div>
 
     <!-- MAIN JAVASCRIPT -->
     <script src="./js/clientInfo.js"></script>
