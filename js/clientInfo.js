@@ -19,13 +19,13 @@ function clientInfo() {
                   <h6 class="card-title fw-semibold">${name}</h6>
                   <p class="footer_link text-muted fw-lighter">Booked for <br> <span class="text-dark">${client.dateMonth} - ${client.time}</span> </p>
                   <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 mt-2" 
-                    data-bs-toggle="modal" data-bs-target="#clientInformation"
+                    data-bs-toggle="modal" data-bs-target="#clientInformation-${index}"
                     style="cursor: pointer"
                     >Personal details 
                         <span class="text-dark history_icons d-flex"><ion-icon name="arrow-forward-outline"></ion-icon></span>
                     </p>
                     
-                    <div class="modal fade" id="clientInformation" tabindex="-1" aria-labelledby="clientInformationLabel" aria-hidden="true">
+                    <div class="modal fade" id="clientInformation-${index}" tabindex="-1" aria-labelledby="clientInformationLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered border-0">
                             <div class="modal-content border-0 rounded-1">
                             <div class="modal-header border-0">
