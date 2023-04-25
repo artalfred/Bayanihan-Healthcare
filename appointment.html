@@ -174,7 +174,86 @@
                 ></textarea>
               </div>
 
-              <div class="d-flex justify-content-center mt-5">
+              <p class="mt-4 d-flex gap-2 justify-content-center">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  required
+                />
+                <a
+                  >I agree to the processing of my
+                  <span class=""
+                    >personal data...
+                    <span
+                      class="text-decoration-underline"
+                      data-bs-toggle="modal"
+                      data-bs-target="#aggreement"
+                      style="cursor: pointer"
+                      >see more</span
+                    ></span
+                  ></a
+                >
+              </p>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="aggreement"
+                tabindex="-1"
+                aria-labelledby="aggreementLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content border-0">
+                    <div class="modal-header border-0">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Dear valued patient,</p>
+                      <p>
+                        Thank you for choosing Bayanihan Healthcare for your
+                        healthcare needs. We are committed to providing you with
+                        the best possible care and experience.
+                      </p>
+                      <p>
+                        To make an appointment with us, we require you to fill
+                        out a form on our website. This form will ask for your
+                        personal information, including your name, contact
+                        details, and location. We understand that your privacy
+                        is important, and we assure you that all information
+                        provided will be kept confidential and secure.
+                      </p>
+                      <p>
+                        By filling out the form, you agree to provide accurate
+                        and complete information to the best of your knowledge.
+                        You also agree to inform us of any changes to your
+                        personal information, including your contact details and
+                        location.
+                      </p>
+
+                      <p>
+                        We appreciate your cooperation in filling out the form
+                        and look forward to serving you.
+                      </p>
+
+                      <p>Sincerely,</p>
+
+                      <p>The Bayanihan Healthcare Team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
                 <button
                   type="submit"
                   class="btn-sub text-light px-4 rounded-2"
