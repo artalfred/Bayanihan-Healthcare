@@ -19,13 +19,13 @@ function cancelHistory() {
                     <h6      class="card-title fw-semibold">${name}</h6>
                     <p class="footer_link text-muted fw-lighter mb-0">Reason for cancellation: <br> <span class="vio-green">No-show</span></p>
                     <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 mt-2" 
-                    data-bs-toggle="modal" data-bs-target="#cancelHistory"
+                    data-bs-toggle="modal" data-bs-target="#cancelHistory-${index}"
                     style="cursor: pointer"
                     >Personal details 
                         <span class="text-dark history_icons d-flex"><ion-icon name="arrow-forward-outline"></ion-icon></span>
                     </p>
                     
-                    <div class="modal fade" id="cancelHistory" tabindex="-1" aria-labelledby="cancelHistoryLabel" aria-hidden="true">
+                    <div class="modal fade" id="cancelHistory-${index}" tabindex="-1" aria-labelledby="cancelHistoryLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered border-0">
                             <div class="modal-content border-0 rounded-1">
                             <div class="modal-header border-0">
