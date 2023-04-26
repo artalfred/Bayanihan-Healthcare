@@ -72,3 +72,12 @@
 }
 
 /* CLIENT INFORMATION */
+
+textarea {
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+}

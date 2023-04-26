@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Manila Medical Hospital</title>
+    <title>Add new article</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -29,6 +29,13 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/appointment.css" />
     <link rel="stylesheet" href="./style/dashboard.css" />
+    <link rel="stylesheet" href="./style/blog.css" />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -47,7 +54,7 @@
             class="d-flex gap-5 m-0 align-items-center p-0"
             id="navigation_list"
           >
-            <li><a href="./createArticles.html">Add New Article</a></li>
+            <li><a href="./Manila.html">Dashboard</a></li>
             <li class="d-flex align-items-center" style="cursor: pointer">
               <div
                 class="border rounded-circle overflow-hidden"
@@ -118,7 +125,7 @@
             </ul>
           </div>
         </li>
-        <li><a href="./createArticles.html">Add New Article</a></li>
+        <li><a href="./Manila.html">Dashboard</a></li>
 
         <div class="mt-2">
           <li class="nav-item">
@@ -128,38 +135,79 @@
       </ul>
     </div>
 
-    <!-- DASHBOARD -->
-    <div class="dashboard">
-      <div class="container-xxl">
-        <h1 class="display-5 fw-semibold text-light">Dashboard</h1>
-        <p class="text-light">
-          Good morning, Manila Medical Center Have a wonderfull day!
-        </p>
+    <div
+      class="container-xxl d-flex align-items-center gap-2"
+      style="margin-top: 8rem"
+    >
+      <a href="./Manila.html" class="vio-green text-muted">Dashboard</a>
+      <span class="arrow d-flex align-items-center"
+        ><ion-icon name="chevron-forward-outline"></ion-icon
+      ></span>
+      <a href="./createArticles.html" class="vio-green">Add new article</a>
+    </div>
 
-        <div class="dashboard__links" style="margin-top: 5rem">
-          <ul class="d-flex gap-5 dashboard_links">
-            <li>
-              <a href="./Manila.html" class="text-light pb-3 active_dashboard"
-                >Appointments</a
-              >
-            </li>
-            <li>
-              <a href="./clientInfo.html" class="text-light"
-                >Client information</a
-              >
-            </li>
-            <li><a href="./history.html" class="text-light">History</a></li>
-          </ul>
+    <!-- Form Articles -->
+    <section class="appointment" style="margin-top: 4rem">
+      <div class="container-xxl">
+        <div>
+          <h5
+            class="fw-semibold display-5 text-center vio-green"
+            style="margin-top: 4rem"
+          >
+            Share Your Content
+          </h5>
+
+          <div class="d-flex justify-content-center mt-5" id="articleForm">
+            <form
+              action="./successBooking.html"
+              class="row g-3"
+              style="width: 45rem"
+              id="appointmentForm"
+            >
+              <div class="col-md-12">
+                <label for="article-title" class="form-label">Tile</label>
+                <input
+                  type="text"
+                  class="form-control py-2"
+                  id="article-title"
+                  placeholder="The main title of the article"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <label for="article-subtitle" class="form-label"
+                  >Subtitle</label
+                >
+                <input
+                  type="text"
+                  class="form-control py-2"
+                  id="article-subtitle"
+                  placeholder="A secondary title or summary that provides more context about the article"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <label for="article-story" class="form-label">Body</label>
+                <textarea
+                  class="form-control py-2"
+                  id="article-story"
+                  rows="3"
+                  placeholder="The main content of the article"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="d-flex justify-content-center mt-5">
+                <button type="submit" class="btn-sub text-light px-4 rounded-2">
+                  Publish Content
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="pt-5">
-      <div class="container-xxl">
-        <h2 class="fw-normal vio-green">Scheduled Visits</h2>
-        <div class="row mt-5 gy-4 dashboard_record" id="client_list"></div>
-      </div>
-    </div>
     <!-- FOOTER -->
     <div style="margin-top: 24rem" id="footer"></div>
 
@@ -171,7 +219,8 @@
     ></script>
 
     <!-- MAIN JAVASCRIPT -->
-    <script src="./js/index.js"></script>
     <script src="./js/appointment.js"></script>
+    <script src="./js/articles.js"></script>
+    <script src="./js/articlesData.js"></script>
   </body>
 </html>
