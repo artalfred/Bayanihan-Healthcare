@@ -38,13 +38,7 @@
   </head>
   <body>
     <!-- NAVIGATION -->
-    <header
-      class="w-100 border-bottom fixed-top"
-      style="
-        box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
-          rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-      "
-    >
+    <header class="w-100 border-bottom fixed-top">
       <nav
         class="d-flex justify-content-between align-items-center container-xxl"
       >
@@ -55,8 +49,12 @@
         </div>
 
         <div class="d-flex align-items-center">
-          <ul class="d-flex gap-4 m-0 align-items-center p-0">
-            <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+          <ul
+            class="d-flex gap-5 m-0 align-items-center p-0"
+            id="navigation_list"
+          >
+            <li><a href="./createArticles.html">Add New Article</a></li>
+            <li class="d-flex align-items-center" style="cursor: pointer">
               <div
                 class="border rounded-circle overflow-hidden"
                 style="height: 2.8rem; width: 2.8rem"
@@ -69,7 +67,6 @@
                   style="height: 100%"
                 />
               </div>
-              <h6 class="text-dark fs-6 mb-0">MMC</h6>
               <div class="dropdown">
                 <ul class="dropdown-menu border-0">
                   <li>
@@ -80,8 +77,62 @@
             </li>
           </ul>
         </div>
+
+        <!-- MENU -->
+        <div
+          class="menu"
+          onclick="myFunction(this)"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
       </nav>
     </header>
+
+    <!-- NAVBAR -->
+    <div
+      class="collapse navbar-collapse fixed-top bg-light w-100"
+      id="navbarNav"
+      style="z-index: 500; top: 4.5rem"
+    >
+      <ul class="navbar-nav py-4 px-3 d-flex gap-3">
+        <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+          <div
+            class="border rounded-circle overflow-hidden"
+            style="height: 2.8rem; width: 2.8rem"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./img/dashboard/manila.png"
+              alt="profile"
+              style="height: 100%"
+            />
+          </div>
+          <h6 class="text-dark fs-6 mb-0">MMC</h6>
+          <div class="dropdown">
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item" href="./index.html">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./createArticles.html">Add New Article</a></li>
+
+        <div class="mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./option_2.html">Sign out</a>
+          </li>
+        </div>
+      </ul>
+    </div>
 
     <div class="dashboard">
       <div class="container-xxl">

@@ -1,0 +1,11 @@
+.articles_box {
+  box-shadow: none !important;
+}
+
+.articles {
+  height: 30rem;
+  background-image: url(../img/blog/MMC.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
