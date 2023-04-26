@@ -5,3 +5,9 @@
 .arrow ion-icon {
   font-size: 1rem;
 }
+
+@media (max-width: 767.98px) {
+  .blogs {
+    overflow-x: hidden;
+  }
+}
