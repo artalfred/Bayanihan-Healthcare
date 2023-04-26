@@ -8,6 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/login.css" />
+    <link rel="stylesheet" href="./style/appointment.css" />
 
     <!-- BOOTSTRAP -->
     <link
@@ -56,50 +57,57 @@
             class="d-grid client_login"
             style="width: 35rem; margin-top: 8rem"
           >
-            <h1 class="display-6 vio-green fw-bold text-center">
-              Get started ins
+            <h1 class="display-5 vio-green fw-bold text-center">
+              Company Registration Form
             </h1>
             <form name="loginform" id="loginForm" class="loginForm mt-4">
               <div class="right">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-12 col-md-6">
                     <input
                       class="border-0 login_ input_default"
-                      type="password"
-                      name="password"
-                      placeholder="First name"
+                      style="height: 44px"
+                      type="text"
+                      name="text"
+                      placeholder="Business or institution name"
                       required
                     />
                   </div>
-                  <div class="col">
-                    <input
-                      class="border-0 login_ input_default"
-                      type="password"
-                      name="password"
-                      placeholder="Last name"
+                  <div class="col-12 col-md-6">
+                    <select
+                      id="reasonForAppointment"
+                      class="form-select"
+                      style="padding-bottom: 0.6rem; padding-top: 0.6rem"
                       required
-                    />
+                    >
+                      <option selected>Select</option>
+                      <option value="partnership">partnership</option>
+                      <option value="corporation">corporation</option>
+                      <option value="limited liability company">
+                        limited liability company
+                      </option>
+                    </select>
                   </div>
                 </div>
                 <input
                   class="border-0 login_ input_default mt-3"
-                  type="password"
-                  name="password"
-                  placeholder="Enter you email"
+                  type="text"
+                  name="Ownership"
+                  placeholder="Ownership structure"
                   required
                 />
                 <input
                   class="border-0 login_ input_default mt-3"
-                  type="password"
-                  name="password"
-                  placeholder="New password"
+                  type="text"
+                  name="Physical address"
+                  placeholder="Physical address"
                   required
                 />
                 <input
                   class="border-0 login_ input_default mt-3"
-                  type="password"
-                  name="password"
-                  placeholder="Confirm password"
+                  type="text"
+                  name="Contact details"
+                  placeholder="Contact details (phone number, email address, and website if applicable)"
                   required
                 />
                 <p class="mt-3 text-center">
@@ -110,8 +118,8 @@
                     id="flexCheckChecked"
                   />
                   <a href="#"
-                    >I agree to the processing of my
-                    <span class="">personal data</span>.</a
+                    >I agree to the processing of
+                    <span class="">confidential data</span>.</a
                   >
                 </p>
 

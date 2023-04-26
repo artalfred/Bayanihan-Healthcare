@@ -7,6 +7,22 @@ input {
   outline: none !important;
 }
 
+.login {
+  background-image: url(../img/form.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.login header {
+  background: transparent !important;
+}
+
+.login header nav {
+  background: transparent !important;
+}
+
 .login_ {
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px !important;
 }
