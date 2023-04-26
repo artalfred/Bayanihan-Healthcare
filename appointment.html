@@ -26,18 +26,34 @@
       crossorigin="anonymous"
     />
 
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/appointment.css" />
+    <link rel="stylesheet" href="./style/blog.css" />
   </head>
   <body>
     <!-- NAVIGATION -->
     <div id="navigations"></div>
 
+    <div
+      class="container-xxl d-flex align-items-center gap-2"
+      style="margin-top: 8rem"
+    >
+      <a href="./index.html" class="vio-green text-muted">Home</a>
+      <span class="arrow d-flex align-items-center"
+        ><ion-icon name="chevron-forward-outline"></ion-icon
+      ></span>
+      <a href="./appointment.html" class="vio-green">Appointment</a>
+    </div>
+
     <section class="appointment">
       <div class="container">
-        <h1 class="fw-semibold text-center vio-green mt-5">
-          Appointment booking
-        </h1>
+        <h1 class="fw-semibold text-center vio-green">Appointment booking</h1>
 
         <div
           class="d-flex gap-2 justify-content-center align-items-center mt-4"

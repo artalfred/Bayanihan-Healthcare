@@ -1,7 +1,7 @@
-.blog {
-  overflow-x: hidden;
-}
-
 .btn-blog {
   border: 1.4px solid var(--btn-green) !important;
+}
+
+.arrow ion-icon {
+  font-size: 1rem;
 }
