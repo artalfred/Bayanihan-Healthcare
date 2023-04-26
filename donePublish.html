@@ -28,12 +28,128 @@
 
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/appointment.css" />
+    <link rel="stylesheet" href="./style/blog.css" />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <!-- NAVIGATION -->
-    <div id="navigations"></div>
+    <header class="w-100 border-bottom fixed-top">
+      <nav
+        class="d-flex justify-content-between align-items-center container-xxl"
+      >
+        <div class="d-flex justify-content-center align-items-center gap-5">
+          <a href="./Manila.html" class="fw-bold">
+            <img src="./img/icons/logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
 
-    <section class="appointment">
+        <div class="d-flex align-items-center">
+          <ul
+            class="d-flex gap-5 m-0 align-items-center p-0"
+            id="navigation_list"
+          >
+            <li><a href="./Manila.html">Dashboard</a></li>
+            <li class="d-flex align-items-center" style="cursor: pointer">
+              <div
+                class="border rounded-circle overflow-hidden"
+                style="height: 2.8rem; width: 2.8rem"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./img/dashboard/manila.png"
+                  alt="profile"
+                  style="height: 100%"
+                />
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-menu border-0">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MENU -->
+        <div
+          class="menu"
+          onclick="myFunction(this)"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- NAVBAR -->
+    <div
+      class="collapse navbar-collapse fixed-top bg-light w-100"
+      id="navbarNav"
+      style="z-index: 500; top: 4.5rem"
+    >
+      <ul class="navbar-nav py-4 px-3 d-flex gap-3">
+        <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+          <div
+            class="border rounded-circle overflow-hidden"
+            style="height: 2.8rem; width: 2.8rem"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./img/dashboard/manila.png"
+              alt="profile"
+              style="height: 100%"
+            />
+          </div>
+          <h6 class="text-dark fs-6 mb-0">MMC</h6>
+          <div class="dropdown">
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item" href="./index.html">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./Manila.html">Dashboard</a></li>
+
+        <div class="mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./option_2.html">Sign out</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <div
+      class="container-xxl d-flex align-items-center gap-2"
+      style="margin-top: 8rem"
+    >
+      <a href="./Manila.html" class="vio-green text-muted">Dashboard</a>
+      <span class="arrow d-flex align-items-center"
+        ><ion-icon name="chevron-forward-outline"></ion-icon
+      ></span>
+      <a href="./createArticles.html" class="vio-green">Add new article</a>
+      <span class="arrow d-flex align-items-center"
+        ><ion-icon name="chevron-forward-outline"></ion-icon
+      ></span>
+      <a href="./donePublish.html" class="vio-green">Published</a>
+    </div>
+
+    <section style="margin-top: 4rem">
       <div class="container">
         <h1 class="fw-semibold text-center vio-green mt-5">Published</h1>
 
@@ -61,24 +177,9 @@
         </div>
 
         <div id="date_time">
-          <h4 class="fw-semibold text-center vio-green mt-2">
-            Succesfull booking
-          </h4>
-          <div class="d-flex justify-content-center">
-            <p class="text-center mt-3 vio-green" style="width: 40rem">
-              Please note that you are required to arrive in facility within 10
-              minutes of your scheduled appointment time. If you arrive later
-              than this, your appointment may be canceled automatically without
-              further notice. This policy helps us ensure that our schedule runs
-              smoothly.
-            </p>
-          </div>
-
-          <div class="d-flex justify-content-center mt-5">
+          <div class="d-flex justify-content-center mt-3">
             <a href="./createArticles.html">
-              <button class="btn-sub text-light px-4 rounded-2">
-                Create another article
-              </button>
+              <button class="btn-sub text-light px-4 rounded-1">Done</button>
             </a>
           </div>
         </div>
