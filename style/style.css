@@ -332,6 +332,10 @@ footer {
   .dashboard_record {
     margin-top: 0 !important;
   }
+
+  .users-dashboard {
+    height: 23rem !important;
+  }
 }
 
 @media (max-width: 425.98px) {
@@ -341,5 +345,20 @@ footer {
 
   .client_login {
     margin-top: 5rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .users-dashboard {
+    height: 20rem !important;
+  }
+
+  .user_profile_parent {
+    gap: 2rem !important;
+  }
+
+  .user_profile {
+    height: 5rem !important;
+    width: 5rem !important;
   }
 }
