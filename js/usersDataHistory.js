@@ -23,13 +23,13 @@ function usersDataAccountHistory() {
             <div class="d-flex align-items-center justify-content-between">
             
                 <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 m-0" 
-                data-bs-toggle="modal" data-bs-target="#clientInformation-${index}"
+                data-bs-toggle="modal" data-bs-target="#cancelledUsers-${index}"
                 style="cursor: pointer"
                 >Personal details 
                     <span class="text-dark history_icons d-flex"><ion-icon name="arrow-forward-outline"></ion-icon></span>
                 </p>
                         
-                <div class="modal fade" id="clientInformation-${index}" tabindex="-1" aria-labelledby="clientInformationLabel" aria-hidden="true">
+                <div class="modal fade" id="cancelledUsers-${index}" tabindex="-1" aria-labelledby="cancelledUsersLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered border-0">
                         <div class="modal-content border-0 rounded-1">
                         <div class="modal-header border-0">
