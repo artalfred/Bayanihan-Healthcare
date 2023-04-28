@@ -22,7 +22,7 @@ function usersDataAccount() {
         <p class="footer_link text-muted fw-lighter">Booked for <br> <span class="text-dark">${date_month} - ${date_time}</span> </p>
         <div class="d-flex align-items-center justify-content-between">
         
-        <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 m-0" 
+            <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 m-0" 
             data-bs-toggle="modal" data-bs-target="#clientInformation-${index}"
             style="cursor: pointer"
             >Personal details 
@@ -46,8 +46,9 @@ function usersDataAccount() {
                     </div>
                 </div>
             </div>
+            
+            <button class="text-decoration-underline border-0 text-dark text-muted delete" style="background: none" data-index='${index}'><p class=" m-0 text-muted" style="cursor: pointer">Cancel</p></button>
             </div>
-            <button class="btn btn-sub text-light delete" data-index='${index}'>Cancel</button>
         </div>
         
       </div>
