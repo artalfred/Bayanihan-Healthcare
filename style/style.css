@@ -377,6 +377,15 @@ footer {
     height: 5rem !important;
     width: 5rem !important;
   }
+
+  #registered_users,
+  #non_registered_users {
+    font-size: 14px !important;
+  }
+
+  #patient_history {
+    font-size: 14px !important;
+  }
 }
 
 @media (max-width: 320px) {
