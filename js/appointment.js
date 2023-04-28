@@ -6,13 +6,7 @@ function cards() {
   let cancelhistoryData =
     JSON.parse(localStorage.getItem("cancelHistory")) || [];
 
-  let UsersData = JSON.parse(localStorage.getItem("UsersData"));
-
   let data = JSON.parse(localStorage.getItem("clients"));
-
-  let combinedData = data.concat(UsersData);
-
-  localStorage.setItem("combinedData", JSON.stringify(combinedData));
 
   let items = data.map(function (client, index) {
     const name = client.Name;
@@ -67,3 +61,32 @@ function cards() {
 }
 
 cards();
+
+// DOM CLIENT HISTORY AND CANCEL HISTORY
+function registered_users() {
+  let registered_users = document.querySelector(".registered_users");
+  let non_registered_users = document.querySelector(".non_registered_users");
+
+  let registeredUsers = document.querySelector("#registered_users");
+  let nonRegisteredUsers = document.querySelector("#non_registered_users");
+
+  registered_users.style.display = "block";
+  non_registered_users.style.display = "none";
+
+  registeredUsers.classList.add("active_dashboard");
+  nonRegisteredUsers.classList.remove("active_dashboard");
+}
+
+function nonRegisteredUsers() {
+  let registered_users = document.querySelector(".registered_users");
+  let non_registered_users = document.querySelector(".non_registered_users");
+
+  let registeredUsers = document.querySelector("#registered_users");
+  let nonRegisteredUsers = document.querySelector("#non_registered_users");
+
+  registered_users.style.display = "none";
+  non_registered_users.style.display = "block";
+
+  registeredUsers.classList.remove("active_dashboard");
+  nonRegisteredUsers.classList.add("active_dashboard");
+}

@@ -95,3 +95,7 @@ textarea::placeholder {
 .usersHistoryCancelled {
   display: none;
 }
+
+.non_registered_users {
+  display: none;
+}
