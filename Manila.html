@@ -159,7 +159,29 @@
     <div class="pt-5">
       <div class="container-xxl">
         <h2 class="fw-normal vio-green">Scheduled Visits</h2>
-        <div class="row mt-5 gy-4 dashboard_record" id="client_list"></div>
+        <div class="d-flex gap-5 mt-5">
+          <a
+            class="btn_client active_dashboard pb-3"
+            id="registered_users"
+            style="cursor: pointer"
+            onclick="registered_users()"
+            >Registered users
+          </a>
+          <a
+            class="btn_cancel pb-3"
+            style="cursor: pointer"
+            id="non_registered_users"
+            onclick="nonRegisteredUsers()"
+            >Non-registered users
+          </a>
+        </div>
+        <div class="registered_users">
+          <div class="row mt-5 gy-4 dashboard_record" id="usersAccData"></div>
+        </div>
+
+        <div class="non_registered_users">
+          <div class="row mt-5 gy-4 dashboard_record" id="client_list"></div>
+        </div>
       </div>
     </div>
     <!-- FOOTER -->
@@ -175,5 +197,6 @@
     <!-- MAIN JAVASCRIPT -->
     <script src="./js/index.js"></script>
     <script src="./js/appointment.js"></script>
+    <script src="./js/usersDataDashboard.js"></script>
   </body>
 </html>
