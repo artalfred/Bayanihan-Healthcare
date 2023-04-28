@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Client History</title>
+    <title>Miguel Reyes</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -26,12 +26,6 @@
       crossorigin="anonymous"
     />
 
-    <!-- ICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/appointment.css" />
     <link rel="stylesheet" href="./style/dashboard.css" />
@@ -43,7 +37,7 @@
         class="d-flex justify-content-between align-items-center container-xxl"
       >
         <div class="d-flex justify-content-center align-items-center gap-5">
-          <a href="./Manila.html" class="fw-bold">
+          <a href="./usersAcc.html" class="fw-bold">
             <img src="./img/icons/logo.png" alt="logo" class="logo" />
           </a>
         </div>
@@ -53,8 +47,7 @@
             class="d-flex gap-5 m-0 align-items-center p-0"
             id="navigation_list"
           >
-            <li><a href="./createArticles.html">Add New Article</a></li>
-            <li class="d-flex align-items-center" style="cursor: pointer">
+            <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
               <div
                 class="overflow-hidden rounded-1"
                 style="height: 3.2rem; width: 3.2rem"
@@ -63,9 +56,13 @@
               >
                 <img
                   class="img-fluid"
-                  src="./img/dashboard/manila_profile.png"
+                  src="./img/dashboard/profile.png"
                   alt=""
                 />
+              </div>
+              <div>
+                <p class="fw-semibold m-0">Miguel reyes</p>
+                <p class="text-muted m-0">Patient</p>
               </div>
               <div class="dropdown">
                 <ul class="dropdown-menu border-0">
@@ -109,13 +106,12 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <img
-              class="img-fluid"
-              src="./img/dashboard/manila_profile.png"
-              alt=""
-            />
+            <img class="img-fluid" src="./img/dashboard/profile.png" alt="" />
           </div>
-          <h6 class="text-dark fs-6 mb-0">MMC</h6>
+          <div>
+            <p class="fw-semibold m-0">Miguel reyes</p>
+            <p class="text-muted m-0">Patient</p>
+          </div>
           <div class="dropdown">
             <ul class="dropdown-menu border-0">
               <li>
@@ -124,7 +120,6 @@
             </ul>
           </div>
         </li>
-        <li><a href="./createArticles.html">Add New Article</a></li>
 
         <div class="mt-2">
           <li class="nav-item">
@@ -134,75 +129,57 @@
       </ul>
     </div>
 
+    <!-- DASHBOARD -->
     <div class="dashboard">
       <div class="container-xxl">
-        <h1 class="display-5 fw-semibold text-light">Dashboard</h1>
-        <p class="text-light">
-          Good morning, Manila Medical Center Have a wonderfull day!
-        </p>
+        <div class="d-flex gap-5 align-items-center">
+          <div
+            class="overflow-hidden rounded-circle"
+            style="height: 8rem; width: 8rem"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img class="img-fluid" src="./img/dashboard/profile.png" alt="" />
+          </div>
+          <div>
+            <h3 class="fw-semibold m-0 text-light">Miguel reyes</h3>
+            <p class="text-muted m-0">Patient</p>
+          </div>
+        </div>
 
-        <div class="dashboard__links" style="margin-top: 5rem">
+        <div class="dashboard__links" style="margin-top: 3rem">
           <ul class="d-flex gap-5 dashboard_links">
             <li>
-              <a href="./Manila.html" class="text-light">Appointments</a>
-            </li>
-            <li>
-              <a href="./clientInfo.html" class="text-light"
-                >Patient information</a
+              <a href="./usersAcc.html" class="text-light pb-3 active_dashboard"
+                >My Appointments</a
               >
             </li>
-            <li>
-              <a href="./history.html" class="text-light pb-3 active_dashboard"
-                >History</a
-              >
-            </li>
+            <li><a href="./history.html" class="text-light">History</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="pt-5">
-      <div class="container-xxl">
-        <h2 class="fw-normal vio-green">
-          Medical records and past appointments.
-        </h2>
-        <div class="d-flex gap-5 mt-5">
-          <a
-            class="btn_client active_dashboard pb-3"
-            onclick="client()"
-            style="cursor: pointer"
-            >Patient History
-          </a>
-          <a
-            class="btn_cancel pb-3"
-            onclick="clientCancel()"
-            style="cursor: pointer"
-            >Cancellation Records
-          </a>
+    <!-- DASHBOARD USERS -->
+    <main class="container-xxl rounded-2">
+      <div class="mt-5">
+        <h2 class="fw-semibold">My appointments</h2>
+
+        <div class="d-flex gap-5 mt-4 border-bottom">
+          <a href="#" class="active_dashboard pb-3">Schedule</a>
+          <a href="#">History</a>
         </div>
 
-        <div class="client_History">
-          <div
-            class="row mt-5 gy-4 dashboard_record"
-            id="clientHistoryData"
-          ></div>
+        <div class="mt-5">
+          <div class="d-grid gap-3" id="usersDataAcc"></div>
         </div>
-        <div class="cancel_history">
-          <div
-            class="row mt-5 gy-4 dashboard_record"
-            id="cancelHistoryData"
-          ></div>
-        </div>
+
+        <div></div>
       </div>
-    </div>
+    </main>
 
     <!-- FOOTER -->
     <div style="margin-top: 24rem" id="footer"></div>
-
-    <!-- MAIN JAVASCRIPT -->
-    <script src="./js/history.js"></script>
-    <script src="./js/cancelHistory.js"></script>
-    <script src="./js/index.js"></script>
 
     <!-- BOOTSTRAP JS -->
     <script
@@ -210,5 +187,9 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="./js/index.js"></script>
+    <script src="./js/usersData.js"></script>
   </body>
 </html>

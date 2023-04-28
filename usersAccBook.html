@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Make an appointment</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/appointment.css" />
+    <link rel="stylesheet" href="./style/blog.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="w-100 border-bottom fixed-top">
+      <nav
+        class="d-flex justify-content-between align-items-center container-xxl"
+      >
+        <div class="d-flex justify-content-center align-items-center gap-5">
+          <a href="./usersAcc.html" class="fw-bold">
+            <img src="./img/icons/logo.png" alt="logo" class="logo" />
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <ul
+            class="d-flex gap-5 m-0 align-items-center p-0"
+            id="navigation_list"
+          >
+            <li><a href="./createArticles.html">View article</a></li>
+            <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+              <div
+                class="overflow-hidden rounded-1"
+                style="height: 3.2rem; width: 3.2rem"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="img-fluid"
+                  src="./img/dashboard/profile.png"
+                  alt=""
+                />
+              </div>
+              <div>
+                <p class="fw-semibold m-0">Kristen mesa</p>
+                <p class="text-muted m-0">Patient</p>
+              </div>
+              <div class="dropdown">
+                <ul class="dropdown-menu border-0">
+                  <li>
+                    <a class="dropdown-item" href="./index.html">Sign out</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MENU -->
+        <div
+          class="menu"
+          onclick="myFunction(this)"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- NAVBAR -->
+    <div
+      class="collapse navbar-collapse fixed-top bg-light w-100"
+      id="navbarNav"
+      style="z-index: 500; top: 4.5rem"
+    >
+      <ul class="navbar-nav py-4 px-3 d-flex gap-3">
+        <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
+          <div
+            class="border rounded-circle overflow-hidden"
+            style="height: 2.8rem; width: 2.8rem"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./img/dashboard/manila.png"
+              alt="profile"
+              style="height: 100%"
+            />
+          </div>
+          <h6 class="text-dark fs-6 mb-0">MMC</h6>
+          <div class="dropdown">
+            <ul class="dropdown-menu border-0">
+              <li>
+                <a class="dropdown-item" href="./index.html">Sign out</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="./createArticles.html">Add New Article</a></li>
+
+        <div class="mt-2">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Sign out</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div
+      class="container-xxl d-flex align-items-center gap-2"
+      style="margin-top: 8rem"
+    >
+      <a href="./usersAcc.html" class="vio-green text-muted">Dashboard</a>
+      <span class="arrow d-flex align-items-center"
+        ><ion-icon name="chevron-forward-outline"></ion-icon
+      ></span>
+      <a href="./appointment.html" class="vio-green">Appointment</a>
+    </div>
+
+    <section class="appointment" style="margin-top: 4rem">
+      <div class="container">
+        <h1 class="fw-semibold text-center vio-green">Appointment booking</h1>
+
+        <div
+          class="d-flex gap-2 justify-content-center align-items-center mt-4"
+        >
+          <nav aria-label="Page navigation">
+            <ul class="d-flex gap-2 pagination align-items-center">
+              <li class="page-item">
+                <a
+                  class="page-link active rounded-circle text-light position-relative"
+                  href="#"
+                  style="padding: 1.6rem"
+                  ><span
+                    class="position-absolute top-50 fw-normal start-50 translate-middle"
+                    >1</span
+                  ></a
+                >
+              </li>
+              <div
+                style="height: 2px; background-color: #888; width: 3rem"
+              ></div>
+              <li class="page-item">
+                <a
+                  class="page-link rounded-circle position-relative"
+                  href="#"
+                  style="padding: 1.6rem"
+                  id="appointment_two"
+                  ><span
+                    class="position-absolute top-50 fw-normal start-50 translate-middle"
+                    >2</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div>
+          <h5 class="fw-semibold text-center vio-green mt-4">
+            Complete the form to get started
+          </h5>
+
+          <div class="d-flex justify-content-center mt-5">
+            <form
+              action="./successBooking.html"
+              class="row g-3"
+              style="width: 45rem"
+              id="UsersAppointmentForm"
+            >
+              <div class="col-md-6">
+                <label for="usersFullName" class="form-label">Full name</label>
+                <input
+                  type="text"
+                  class="form-control py-2"
+                  id="usersFullName"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6">
+                <label for="UsersReasonForAppointment" class="form-label"
+                  >Reason for appointment</label
+                >
+                <select
+                  id="UsersReasonForAppointment"
+                  class="form-select"
+                  required
+                >
+                  <option selected>Select</option>
+                  <option value="consultation">Consultation</option>
+                  <option value="follow-up">Follow-up</option>
+                  <option value="treatment">Treatment</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="number" class="form-label"
+                  >Select a City/Hospital</label
+                >
+                <select id="Users_city_hospital" class="form-select">
+                  <option selected>Select a City/Hospital</option>
+                  <option value="Makati Medical Center">
+                    Manila Medical Center
+                  </option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="UsersDate" class="form-label">Date</label>
+                    <input
+                      type="date"
+                      class="form-control py-2"
+                      id="UsersDate"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="UsersTime" class="form-label">Time</label>
+                    <input
+                      type="time"
+                      class="form-control py-2"
+                      id="UsersTime"
+                      step="60"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <label for="UsersMessage" class="form-label"
+                  >Health Condition Notes</label
+                >
+                <textarea
+                  class="form-control py-2"
+                  id="UsersMessage"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+
+              <p class="mt-4 d-flex gap-2 justify-content-center">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  required
+                />
+                <a
+                  >I agree to the processing of my
+                  <span class=""
+                    >personal data...
+                    <span
+                      class="text-decoration-underline"
+                      data-bs-toggle="modal"
+                      data-bs-target="#aggreement"
+                      style="cursor: pointer"
+                      >see more</span
+                    ></span
+                  ></a
+                >
+              </p>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="aggreement"
+                tabindex="-1"
+                aria-labelledby="aggreementLabel"
+                aria-hidden="true"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div class="modal-content border-0 rounded-0">
+                    <div class="modal-header border-0">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Dear valued patient,</p>
+                      <p>
+                        Thank you for choosing Bayanihan Healthcare for your
+                        healthcare needs. We are committed to providing you with
+                        the best possible care and experience.
+                      </p>
+                      <p>
+                        To make an appointment with us, we require you to fill
+                        out a form on our website. This form will ask for your
+                        personal information, including your name, contact
+                        details, and location. We understand that your privacy
+                        is important, and we assure you that all information
+                        provided will be kept confidential and secure.
+                      </p>
+                      <p>
+                        By filling out the form, you agree to provide accurate
+                        and complete information to the best of your knowledge.
+                        You also agree to inform us of any changes to your
+                        personal information, including your contact details and
+                        location.
+                      </p>
+
+                      <p>
+                        We appreciate your cooperation in filling out the form
+                        and look forward to serving you.
+                      </p>
+
+                      <p>Sincerely,</p>
+
+                      <p>The Bayanihan Healthcare Team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center mt-4">
+                <button type="submit" class="btn-sub text-light px-4 rounded-2">
+                  Continue
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- MAIN JAVASCRIPT -->
+    <script src="./js/userAcc.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
+
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
