@@ -19,13 +19,13 @@ function clientHistory() {
         <h6 class="card-title fw-semibold">${name}</h6>
         <p class="footer_link text-muted fw-lighter mb-0">Appointment Date: <br> <span class="vio-green">${date_month}</span></p>
         <p class="footer_link text-muted fw-lighter d-flex align-items-center gap-2 mb-0 mt-2" 
-        data-bs-toggle="modal" data-bs-target="#clientHistory-${index}"
+        data-bs-toggle="modal" data-bs-target="#patientHistory-${index}"
         style="cursor: pointer"
         >Personal details 
             <span class="text-dark history_icons d-flex"><ion-icon name="arrow-forward-outline"></ion-icon></span>
         </p>
         
-        <div class="modal fade" id="clientHistory-${index}" tabindex="-1" aria-labelledby="clientHistoryLabel" aria-hidden="true">
+        <div class="modal fade" id="patientHistory-${index}" tabindex="-1" aria-labelledby="patientHistoryLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered border-0">
                 <div class="modal-content border-0 rounded-1">
                 <div class="modal-header border-0">
