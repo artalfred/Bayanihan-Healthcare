@@ -37,14 +37,13 @@ function articleOld() {
     let description = articles.articleStory;
 
     return `
-    
-    <h5 class="fw-bold vio-green mt-4">
-    ${title}
-    </h5>
-    <h6 class='fw-semibold vio-green'>${subtitle}</h6>
-    <p class="vio-green my-3" style="font-size: 16px">
-    ${description}
-    </p>
+            <h5 class="fw-bold vio-green mt-4">
+                ${title}
+            </h5>
+            <h6 class='fw-semibold vio-green'>${subtitle}</h6>
+            <p class="vio-green my-3" style="font-size: 16px">
+                ${description}
+            </p>
     `;
   });
 

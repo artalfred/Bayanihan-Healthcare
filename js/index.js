@@ -18,21 +18,11 @@ function myFunction(x) {
 }
 
 // APPOINTMENT
-const date_time = document.querySelector("#date_time");
 const form = document.querySelector("#form");
 const appointment_success = document.querySelector("#appointment_success");
 const check = document.querySelector(".check");
 const three = document.querySelector(".three");
 const appointment_two = document.querySelector("#appointment_two");
-
-let dateMonth = document.querySelector("#date");
-let time = document.querySelector("#time");
-let fullName = document.querySelector("#fullName");
-let email = document.querySelector("#email");
-let number = document.querySelector("#number");
-let reason_appointment = document.querySelector("#reasonForAppointment");
-let city = document.querySelector("#city_hospital");
-let message = document.querySelector("#message");
 
 let appointmentForm = document.querySelector("#appointmentForm");
 

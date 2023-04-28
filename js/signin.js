@@ -1,3 +1,4 @@
+// INSTITUTION DEMO ACCOUNT
 let loginForm = document.querySelector("#loginForm");
 
 const accounts = [{ email: "ManilaCenter@gmail.com", password: "111111" }];

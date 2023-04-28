@@ -56,13 +56,18 @@
             class="d-grid client_login"
             style="width: 35rem; margin-top: 8rem"
           >
+            <h6 class="m-0">Demo Account</h6>
+            <p class="m-0">Email: miguel@gmail.com</p>
+            <p class="m-0">Password: 222222</p>
+
             <h1 class="display-6 vio-green fw-bold">Sign in</h1>
-            <form name="loginform " id="loginForm" class="loginForm mt-3">
+            <form name="loginform " id="usersLoginForm" class="loginForm mt-3">
               <div class="right">
                 <input
                   class="border-0 login_ input_default"
                   type="email"
                   name="email"
+                  id="usersEmail"
                   placeholder="Your Email"
                   required
                 /><br /><br />
@@ -70,6 +75,7 @@
                   class="border-0 login_ input_default"
                   type="password"
                   name="password"
+                  id="usersPassword"
                   placeholder="Password"
                   required
                 />
@@ -77,7 +83,10 @@
                   <a href="#">Forgot Password?</a>
                 </p>
 
-                <button class="btn btn-main text-light px-4 w-100">
+                <button
+                  type="submit"
+                  class="btn btn-main text-light px-4 w-100"
+                >
                   <p class="mb-0">Sign in</p>
                 </button>
                 <div class="d-grid gap-2 mt-3">
@@ -85,7 +94,6 @@
                     type="submit"
                     class="btn btn-light vio-green px-4 w-100 d-flex align-items-center gap-3 justify-content-center login_"
                     style="background-color: #fff !important"
-                    id="btnlogin"
                   >
                     <img
                       src="./img/icons/google.png"
@@ -98,7 +106,6 @@
                     type="submit"
                     class="btn btn-light vio-green px-4 w-100 d-flex gap-3 align-items-center justify-content-center login_"
                     style="background-color: #fff !important"
-                    id="btnlogin"
                   >
                     <img
                       src="./img/icons/facebook.png"
@@ -134,6 +141,6 @@
     ></script>
 
     <script src="./js/index.js"></script>
-    <script src="./js/signin.js"></script>
+    <script src="./js/usersSignin.js"></script>
   </body>
 </html>
