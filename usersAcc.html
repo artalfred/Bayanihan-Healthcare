@@ -29,6 +29,12 @@
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/appointment.css" />
     <link rel="stylesheet" href="./style/dashboard.css" />
+
+    <!-- ICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -44,9 +50,16 @@
 
         <div class="d-flex align-items-center">
           <ul
-            class="d-flex gap-5 m-0 align-items-center p-0"
+            class="d-flex gap-4 m-0 align-items-center p-0"
             id="navigation_list"
           >
+            <li>
+              <a href="./usersAccBook.html">
+                <button class="btn btn-main text-light">
+                  Make an appointment
+                </button>
+              </a>
+            </li>
             <li class="d-flex gap-3 align-items-center" style="cursor: pointer">
               <div
                 class="overflow-hidden rounded-1"
@@ -163,15 +176,8 @@
     <!-- DASHBOARD USERS -->
     <main class="container-xxl rounded-2">
       <div class="mt-5">
-        <h2 class="fw-semibold">My appointments</h2>
-
-        <div class="d-flex gap-5 mt-4 border-bottom">
-          <a href="#" class="active_dashboard pb-3">Schedule</a>
-          <a href="#">History</a>
-        </div>
-
         <div class="mt-5">
-          <div class="d-grid gap-3" id="usersDataAcc"></div>
+          <div class="row gap-3" id="usersDataAcc"></div>
         </div>
 
         <div></div>
