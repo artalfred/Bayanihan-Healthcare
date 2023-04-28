@@ -37,8 +37,8 @@ function usersDataAccount() {
                     </div>
                     <div class="modal-body">
                         <p class="m-0 text-muted">Name <br>  <h6 class="vio-green">${name}</h6></p>
-                        <p class="m-0 text-muted">Email <br>  <h6 class="vio-green">${email}</h6></p>
-                        <p class="m-0 text-muted">Phone number <br>  <h6 class="vio-green">${number}</h6></p>
+                        <p class="m-0 text-muted">Email <br>  <h6 class="vio-green">miguelReyes@gmail.com</h6></p>
+                        <p class="m-0 text-muted">Phone number <br>  <h6 class="vio-green">09452758364</h6></p>
                         <p class="m-0 text-muted">Reason for appointment <br>  <h6 class="vio-green">${reason_appointment}</h6></p>
                         <p class="m-0 text-muted">Appointment Date and Time <br>  <h6 class="vio-green">${date_month} - ${date_time}</h6></p>
                         <p class="m-0 text-muted">Health Condition Notes <br>  <h6 class="vio-green">${message}</h6></p>
