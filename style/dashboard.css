@@ -91,3 +91,7 @@ textarea::placeholder {
 .users-dashboard {
   background: #999;
 }
+
+.usersHistoryCancelled {
+  display: none;
+}
