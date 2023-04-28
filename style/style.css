@@ -336,6 +336,17 @@ footer {
   .users-dashboard {
     height: 23rem !important;
   }
+
+  #option_2 a button {
+    padding-left: 1.8rem !important;
+    padding-right: 1.8rem !important;
+    width: 100%;
+    justify-content: center;
+  }
+
+  #option_2 {
+    display: grid !important;
+  }
 }
 
 @media (max-width: 425.98px) {
@@ -345,6 +356,11 @@ footer {
 
   .client_login {
     margin-top: 5rem !important;
+  }
+
+  .sign-up a button {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
   }
 }
 
@@ -360,5 +376,16 @@ footer {
   .user_profile {
     height: 5rem !important;
     width: 5rem !important;
+  }
+}
+
+@media (max-width: 320px) {
+  #sign-up {
+    display: grid !important;
+  }
+
+  #sign-up a button {
+    width: 100%;
+    justify-content: center;
   }
 }
