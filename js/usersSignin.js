@@ -1,7 +1,7 @@
 // USERS DEMO ACCOUNT
 let usersLoginForm = document.querySelector("#usersLoginForm");
 
-const userAccount = [{ email: "miguel@gmail.com", password: "222222" }];
+const userAccount = [{ email: "miguel123@gmail.com", password: "222222" }];
 
 usersLoginForm.addEventListener("submit", (event) => {
   event.preventDefault();
