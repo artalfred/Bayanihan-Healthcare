@@ -89,7 +89,10 @@ textarea::placeholder {
 }
 
 .users-dashboard {
-  background: #999;
+  background-image: url(../img/dashboard/users_dashboard.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .usersHistoryCancelled {
