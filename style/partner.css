@@ -47,6 +47,7 @@ p{
 .aboutright h2{
     border-left: 10px solid #113e51;
     padding-left: 10px;
+    padding-right: 100px;
     color:--sub-title;
     margin-top: 40px;
 }
