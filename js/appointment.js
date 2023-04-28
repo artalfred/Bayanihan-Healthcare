@@ -6,7 +6,13 @@ function cards() {
   let cancelhistoryData =
     JSON.parse(localStorage.getItem("cancelHistory")) || [];
 
+  let UsersData = JSON.parse(localStorage.getItem("UsersData"));
+
   let data = JSON.parse(localStorage.getItem("clients"));
+
+  let combinedData = data.concat(UsersData);
+
+  localStorage.setItem("combinedData", JSON.stringify(combinedData));
 
   let items = data.map(function (client, index) {
     const name = client.Name;

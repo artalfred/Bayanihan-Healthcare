@@ -1,6 +1,7 @@
 function clientInfo() {
   let clientInfo = document.querySelector("#clientInfo_");
 
+  let combined = JSON.parse(localStorage.getItem("combinedData"));
   let client = JSON.parse(localStorage.getItem("clients"));
 
   let items = client.map(function (client, index) {
